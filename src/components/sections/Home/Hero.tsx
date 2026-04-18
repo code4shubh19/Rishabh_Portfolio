@@ -1,60 +1,40 @@
-'use client';
-
 import React from 'react';
-import { motion } from 'framer-motion';
-import { Section } from '@/types';
 
-interface HeroProps {
-
-  content: {
-    title: string;
-    subtitle?: string;
-    cta?: string;
-    image?: string;
-  };
-  style?: Record<string, any>;
-}
-
-export default function Hero({ content, style }: HeroProps) {
+export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-24 px-6 md:px-12 bg-background">
-      {/* Decorative Blur Elements */}
-      <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary opacity-20 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[35%] h-[35%] bg-accent opacity-10 blur-[100px] rounded-full pointer-events-none" />
-
-      <div className="container relative z-10 mx-auto max-w-6xl text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="space-y-8"
-        >
-          <h1 className="text-5xl md:text-8xl font-black tracking-tight leading-tight md:leading-[1.1]">
-           <span className="text-foreground">{content.title.split(' ')[0]}</span>{' '}
-            <span className="text-gradient drop-shadow-sm font-bold block md:inline">
-              {content.title.split(' ').slice(1).join(' ')}
-            </span>
+    <section className="relative min-h-screen flex items-center pt-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-7 z-10">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-sm font-semibold mb-6">
+            Founder at Faxlab &amp; Author
+          </span>
+          <h1 className="text-5xl lg:text-7xl font-bold font-display text-on-surface leading-[1.1] mb-8">
+            Architecting AI, <br />
+            <span className="text-primary italic">Narrating</span> the Future.
           </h1>
-
-          {content.subtitle && (
-            <p className="max-w-2xl mx-auto text-xl md:text-2xl text-muted-foreground leading-relaxed font-medium">
-              {content.subtitle}
-            </p>
-          )}
-
-          {content.cta && (
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="mt-10"
-            >
-              <button className="px-10 py-5 bg-primary text-white font-bold rounded-2xl shadow-xl shadow-primary/20 hover:shadow-primary/40 transition-all text-lg group overflow-hidden relative border-none">
-                <span className="relative z-10">{content.cta}</span>
-                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </button>
-            </motion.div>
-          )}
-        </motion.div>
+          <p className="text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+            Bridging the gap between technical precision and human narrative. Currently building Faxlab AI while exploring the philosophy of innovation through the written word.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <button className="bg-primary text-on-primary px-8 py-4 rounded-md text-lg font-bold hover:bg-gradient-to-r hover:from-primary hover:to-primary-container transition-all">
+              Explore Books
+            </button>
+            <button className="bg-surface-container-low text-on-surface px-8 py-4 rounded-md text-lg font-bold hover:bg-surface-container-high transition-all">
+              Learn About Faxlab
+            </button>
+          </div>
+        </div>
+        <div className="lg:col-span-5 relative">
+          <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10 transform lg:rotate-2">
+            <img
+              alt="Risabh Agrawal"
+              className="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8KzK5Ys-QZAEcT-dWD3D3pL1hic42q9NAzgLmAJukmRbI4n_aDYbzdTp3H06e2BGSCLpvkvIQDyBpLsYagFvd667Y6lsXxQ-2iwQ5L3zlaYz1txmhRf_y5ONywVexV_xEKj3DDgABH5bjAyRZLltJ0D51a4LRUvqyCvK8YcHM4Y96ubJlRdzRJNH-3FcIhhllESUoLaA0zMzS4dFx2eE-5krg1Y36sRutPPX0bSsQvU3L7xF-1rrJIcElpdZuosh2i_qU6wfM99CH"
+            />
+          </div>
+          {/* Decorative background element */}
+          <div className="absolute -top-12 -right-12 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl -z-0"></div>
+        </div>
       </div>
     </section>
   );

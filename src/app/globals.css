@@ -1,49 +1,87 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: #6366f1;
-  --color-primary-foreground: #ffffff;
-  --color-secondary: #0f172a;
-  --color-accent: #f59e0b;
-  --color-muted: #64748b;
-  --color-muted-foreground: #94a3b8;
-  --color-border: #1e293b;
+  /* Colors defined from the design system */
+  --color-background: var(--color-background-v);
+  --color-surface: var(--color-surface-v);
+  --color-surface-container-low: var(--color-surface-container-low-v);
+  --color-surface-container: var(--color-surface-container-v);
+  --color-surface-container-high: var(--color-surface-container-high-v);
+  --color-surface-container-lowest: var(--color-surface-container-lowest-v);
+  --color-surface-variant: var(--color-surface-variant-v);
+  --color-surface-bright: var(--color-surface-bright-v);
+
+  --color-primary: var(--color-primary-v);
+  --color-primary-container: var(--color-primary-container-v);
+  --color-on-primary: var(--color-on-primary-v);
+  
+  --color-secondary: var(--color-secondary-v);
+  --color-secondary-container: var(--color-secondary-container-v);
+  --color-on-secondary-container: var(--color-on-secondary-container-v);
+
+  --color-on-surface: var(--color-on-surface-v);
+  --color-on-surface-variant: var(--color-on-surface-variant-v);
+  
+  --color-outline-variant: var(--color-outline-variant-v);
+  --color-outline: var(--color-outline-v);
+  --color-error: var(--color-error-v);
+
+  /* Helper utilities */
+  --shadow-ambient: 0 20px 40px rgba(17, 28, 44, 0.06);
 }
 
 :root {
-  --background: #0f172a;
-  --foreground: #f8fafc;
-}
+  /* Design system tokens exactly as specified */
+  --color-background-v: #f9f9ff;
+  --color-surface-v: #f9f9ff;
+  --color-surface-container-lowest-v: #ffffff;
+  --color-surface-container-low-v: #f0f3ff;
+  --color-surface-container-v: #e7eeff;
+  --color-surface-container-high-v: #dee8ff;
+  --color-surface-variant-v: #d8e3fa;
+  --color-surface-bright-v: #f9f9ff;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #f8fafc;
-    --foreground: #0f172a;
-  }
+  --color-primary-v: #00677e;
+  --color-primary-container-v: #1bb8de;
+  --color-on-primary-v: #ffffff;
+
+  --color-secondary-v: #466274;
+  --color-secondary-container-v: #c9e6fc;
+  --color-on-secondary-container-v: #4c687a;
+
+  --color-on-surface-v: #111c2c;
+  --color-on-surface-variant-v: #3d494d;
+
+  --color-outline-variant-v: #bcc8ce;
+  --color-outline-v: #6d797e;
+  --color-error-v: #ba1a1a;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-surface-v);
+  color: var(--color-on-surface-v);
   font-family: var(--font-sans);
 }
 
-.glass-morphism {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.glass-nav {
+  background: rgba(216, 227, 250, 0.60); /* surface-variant at 60% */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
-.text-gradient {
-  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.ambient-shadow {
+  box-shadow: var(--shadow-ambient);
 }
 
+.ghost-border {
+  border: 1px solid rgba(188, 200, 206, 0.2); /* outline-variant at 20% */
+}
+
+/* Base Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}

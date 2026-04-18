@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-jakarta",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-mono",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Rishabh Portfolio | Innovative Web Experiences",
-  description: "A portfolio of modern, high-performance web applications and creative digital solutions.",
+  title: "Risabh Agrawal | Author Site",
+  description: "The Intellectual Architect - Bridging SaaS precision with editorial layout.",
 };
 
 import { Header } from "@/components/layout/Header";
@@ -29,11 +28,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakarta.variable} ${jetbrainsMono.variable} h-full antialiased scroll-smooth`}
+      className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-background font-sans">
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+      </head>
+      <body className="min-h-full flex flex-col bg-surface font-sans text-on-surface">
         <Header />
-        <main className="flex-grow pt-20">
+        <main className="flex-grow pt-24 bg-surface relative z-0">
           {children}
         </main>
         <Footer />
