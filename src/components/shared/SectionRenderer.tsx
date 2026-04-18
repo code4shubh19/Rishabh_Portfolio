@@ -2,8 +2,8 @@ import React, { Suspense } from 'react';
 import { Section } from '@/types';
 
 // Lazy load section components for performance
-const Hero = React.lazy(() => import('@/components/sections/Hero'));
-const About = React.lazy(() => import('@/components/sections/About'));
+const Hero = React.lazy(() => import('@/components/sections/Home/Hero'));
+const About = React.lazy(() => import('@/components/sections/Home/About'));
 // const Projects = React.lazy(() => import('@/components/sections/Projects'));
 // const Contact = React.lazy(() => import('@/components/sections/Contact'));
 

@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description: "A portfolio of modern, high-performance web applications and creative digital solutions.",
 };
 
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +32,11 @@ export default function RootLayout({
       className={`${plusJakarta.variable} ${jetbrainsMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-background font-sans">
-        {children}
+        <Header />
+        <main className="flex-grow pt-20">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
