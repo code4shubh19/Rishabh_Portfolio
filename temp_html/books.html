@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#9faac0",
+                    "inverse-on-surface": "#ebf1ff",
+                    "secondary-container": "#c9e6fc",
+                    "surface": "#f9f9ff",
+                    "surface-container-highest": "#d8e3fa",
+                    "surface-bright": "#f9f9ff",
+                    "outline": "#6d797e",
+                    "on-tertiary-fixed-variant": "#3c475a",
+                    "primary-fixed-dim": "#4fd6fd",
+                    "on-tertiary-fixed": "#111c2c",
+                    "surface-container-low": "#f0f3ff",
+                    "on-secondary-container": "#4c687a",
+                    "surface-container-high": "#dee8ff",
+                    "background": "#f9f9ff",
+                    "on-primary-fixed-variant": "#004e60",
+                    "on-surface-variant": "#3d494d",
+                    "surface-variant": "#d8e3fa",
+                    "secondary": "#466274",
+                    "on-primary-fixed": "#001f28",
+                    "secondary-fixed": "#c9e6fc",
+                    "primary-fixed": "#b5ebff",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#545f72",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#2e4a5b",
+                    "secondary-fixed-dim": "#aecadf",
+                    "inverse-surface": "#263142",
+                    "primary": "#00677e",
+                    "tertiary-fixed-dim": "#bcc7dd",
+                    "surface-tint": "#00677e",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#1bb8de",
+                    "on-surface": "#111c2c",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#cfdaf1",
+                    "inverse-primary": "#4fd6fd",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#d8e3fa",
+                    "on-background": "#111c2c",
+                    "outline-variant": "#bcc8ce",
+                    "on-tertiary-container": "#343f51",
+                    "on-secondary-fixed": "#001e2d",
+                    "on-primary-container": "#004454",
+                    "surface-container": "#e7eeff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(17, 28, 44, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/60 backdrop-blur-xl transition-all duration-300">
+<div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
+<span class="text-2xl font-bold tracking-tight text-slate-900 font-headline">Risabh Agrawal</span>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 font-medium hover:text-cyan-600 transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-600 font-medium hover:text-cyan-600 transition-colors duration-300" href="#">About</a>
+<a class="text-slate-600 font-medium hover:text-cyan-600 transition-colors duration-300" href="#">Achievements</a>
+<a class="text-slate-600 font-medium hover:text-cyan-600 transition-colors duration-300" href="#">Faxlab AI</a>
+<a class="text-cyan-700 font-bold border-b-2 border-cyan-700 pb-1" href="#">Books</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:opacity-90 transition-all">Contact</button>
+</div>
+<!-- Mobile Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Header -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-8">
+<span class="text-primary font-headline font-bold tracking-widest uppercase text-sm mb-4 block">Publications &amp; Intellect</span>
+<h1 class="text-6xl md:text-7xl font-headline font-bold text-on-surface leading-tight tracking-tighter">
+                        Books that bridge <br/>
+<span class="text-primary-container">Tech and Narrative.</span>
+</h1>
+</div>
+<div class="md:col-span-4 border-l-4 border-primary-container pl-6 pb-2">
+<p class="text-lg text-on-surface-variant font-body leading-relaxed">
+                        A curated collection of explorations into artificial intelligence, digital philosophy, and the future of human-machine synthesis.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Featured Publication (Asymmetric Layout) -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="bg-surface-container-low rounded-xl p-8 md:p-16 flex flex-col md:flex-row gap-12 items-center overflow-hidden">
+<div class="w-full md:w-2/5 relative">
+<div class="absolute inset-0 bg-primary/10 blur-3xl -z-10 translate-x-10 translate-y-10"></div>
+<img alt="The Architect of Tomorrow Book Cover" class="w-full h-auto editorial-shadow rounded-lg transform -rotate-3 hover:rotate-0 transition-transform duration-500" data-alt="Premium minimalist book cover titled The Architect of Tomorrow featuring abstract geometric shapes in deep teal and metallic silver against a matte white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUAU9FducG11ygYxIe9R4xnKsSmIvd4YcmAoewt3drXwyitKB0aJLjLTm1HRXvSPdRXc6VIFvW223tJ7NsAfhKpqcmRbQhIk7sHErr5dUZZ-IaTtGNb3IPawmYJEqc2tCYe5ajz1HqnyzO-qCosZTg3GWaokOZjOqbbH5pK02sLgp9GLNUxjvUJUb1b1uqgauHG64WuSGchwgUhZvxB1NOlEUD3l40vLq22ALnnNGmLorlPH1s753_NEwQdbZSRKGig3HNizDvcSv0"/>
+</div>
+<div class="w-full md:w-3/5 space-y-8">
+<div class="inline-flex items-center px-4 py-1 rounded-full bg-primary-container/20 text-primary font-bold text-xs uppercase tracking-widest">Latest Release</div>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface">The Architect of Tomorrow</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed">
+                        In this definitive guide, Risabh explores how modern AI isn't just a tool, but a structural shift in how we conceive creative outputs. A deep dive into the Faxlab methodology.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold flex items-center gap-2 hover:opacity-90 transition-all">
+                            Buy on Amazon
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-md font-bold hover:opacity-80 transition-all">
+                            Read Excerpt
+                        </button>
+</div>
+<div class="pt-6 border-t border-outline-variant/20 flex gap-8">
+<div>
+<p class="text-xs text-outline uppercase font-bold tracking-widest mb-1">Published</p>
+<p class="font-headline font-medium">October 2023</p>
+</div>
+<div>
+<p class="text-xs text-outline uppercase font-bold tracking-widest mb-1">Format</p>
+<p class="font-headline font-medium">Hardcover, Digital</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Bookshelf (Bento-style Grid) -->
+<section class="max-w-7xl mx-auto px-8 space-y-12">
+<div class="flex justify-between items-end">
+<h3 class="text-3xl font-headline font-bold">The Complete Bibliography</h3>
+<div class="hidden md:flex gap-4">
+<button class="p-2 rounded-full border border-outline-variant/30 text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-2 rounded-full border border-outline-variant/30 text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined">view_agenda</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Book Card 1 -->
+<div class="group">
+<div class="bg-surface-container-low rounded-xl overflow-hidden mb-6 aspect-[3/4] flex items-center justify-center p-12 transition-all group-hover:bg-surface-container-high">
+<img alt="Neural Narratives Book Cover" class="w-full h-auto editorial-shadow transition-transform duration-500 group-hover:scale-105" data-alt="Sleek modern book cover design featuring a glowing neural network pattern in cyan over a dark slate grey texture background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEWjiSuIvGiUb9nNuDSsR3ULZvEEC6xqo1txLx31XfDfHBpttADRo_sV8YuOtN2G4mpCLeXsqYlL_3ONBqkfNzeZtgFwrrydel-t2fofqTmEhKpI0SeRFFF98vDIf0qpsITbOhZU44IzNik_QgyNuqpj0m_kvETbx_t3uXEjHnf1qKT7nAhkggsljil7gdMt6Y-iVJjJHh3y5gQwLGAGV9Wvud4ygEqILbz6YqGXw5uz7zPyyOE_VatXIx1lypeZZB0N3PquYsP4Vy"/>
+</div>
+<div class="space-y-3">
+<h4 class="text-2xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Neural Narratives</h4>
+<p class="text-on-surface-variant font-body line-clamp-2">How storytelling evolves when algorithms become the co-authors of our future.</p>
+<div class="pt-4 flex justify-between items-center">
+<span class="text-sm font-bold text-outline uppercase tracking-tighter italic">2021 · Tech Philosophy</span>
+<a class="text-primary font-bold inline-flex items-center gap-1 hover:underline" href="#">
+                                Amazon
+                                <span class="material-symbols-outlined text-xs">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Book Card 2 -->
+<div class="group">
+<div class="bg-surface-container-low rounded-xl overflow-hidden mb-6 aspect-[3/4] flex items-center justify-center p-12 transition-all group-hover:bg-surface-container-high">
+<img alt="Faxlab Foundations Book Cover" class="w-full h-auto editorial-shadow transition-transform duration-500 group-hover:scale-105" data-alt="Conceptual book cover with minimalist typography and a single bold red architectural pillar against a paper-textured off-white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo0ZKI0hVisG2RF_o3Dg-BzAdNqCEfewQ7Ns89qzPSWB5tix-jzm3mn1ewDt0WHSIIoTDc7siY7etzO_Y822uMpnYd8GEhSw2xUq3RyIh4aIfIKqSq1Yl8RfiRI0RC4-BIl9yZLzlpDyE3X58mtPNRQL7nnv3uHx4qEzrT6mzPVNHaNQYA3k8aRw7tCv4NBB1UGdMjxmha19LADx7sGA8wa8veQs_MiqiFsXRNFNwy_1tKQIHqCyUSRR-U4UgRdtaS5G8vfk8uxa_7"/>
+</div>
+<div class="space-y-3">
+<h4 class="text-2xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Faxlab Foundations</h4>
+<p class="text-on-surface-variant font-body line-clamp-2">The core principles that built a leader in the AI-driven transformation of business operations.</p>
+<div class="pt-4 flex justify-between items-center">
+<span class="text-sm font-bold text-outline uppercase tracking-tighter italic">2020 · Business Strategy</span>
+<a class="text-primary font-bold inline-flex items-center gap-1 hover:underline" href="#">
+                                Amazon
+                                <span class="material-symbols-outlined text-xs">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Book Card 3 -->
+<div class="group">
+<div class="bg-surface-container-low rounded-xl overflow-hidden mb-6 aspect-[3/4] flex items-center justify-center p-12 transition-all group-hover:bg-surface-container-high">
+<img alt="Silicon Souls Book Cover" class="w-full h-auto editorial-shadow transition-transform duration-500 group-hover:scale-105" data-alt="Abstract book cover featuring an iridescent glass-like humanoid figure floating in a light blue ethereal void with soft focus elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBS-J68OqBH7y8WZtxPypE_pOgFD-imH_McJSA6B8d7NKyLAybKC2U7KMtBhoFtVD0BrETGMVzG93EKwfkZ9lgR2jAgSfXjW5d-XUbel0MT9CzRRZfSQAZa3piQmCvI9W5RXe_3K39BguvqCXJlG0WbSo0hgTDDwx6inTuXs5m3wogE-uJvfzmNsodB9-MwUXSvTuSz32dbEMNgD3nSKDeCFBvIOQ8Ky8fyC8iBWmFYGiMpCkVMy0lxS8eKqpAe9Mm0JObayjvSKkJ"/>
+</div>
+<div class="space-y-3">
+<h4 class="text-2xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Silicon Souls</h4>
+<p class="text-on-surface-variant font-body line-clamp-2">A collection of essays exploring the human element in an increasingly automated world.</p>
+<div class="pt-4 flex justify-between items-center">
+<span class="text-sm font-bold text-outline uppercase tracking-tighter italic">2018 · Essays</span>
+<a class="text-primary font-bold inline-flex items-center gap-1 hover:underline" href="#">
+                                Amazon
+                                <span class="material-symbols-outlined text-xs">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Subscription (Glassmorphism) -->
+<section class="max-w-4xl mx-auto px-8 mt-40">
+<div class="relative rounded-2xl p-12 overflow-hidden bg-primary/5 text-center border border-white/20 backdrop-blur-md">
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<h4 class="text-3xl font-headline font-bold mb-4 relative">Stay Updated on New Releases</h4>
+<p class="text-on-surface-variant mb-8 max-w-xl mx-auto relative">Get early access to chapter previews, limited edition copies, and quarterly essays from Risabh Agrawal.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto relative">
+<input class="flex-grow bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary transition-all" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary font-bold px-8 py-3 rounded-md hover:opacity-90 transition-all" type="submit">Join the Circle</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-100 dark:border-slate-800 py-12">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-8">
+<div class="space-y-4">
+<span class="text-lg font-bold text-slate-900 dark:text-slate-100 font-headline">Risabh Agrawal</span>
+<p class="text-slate-500 dark:text-slate-500 font-body text-sm tracking-wide uppercase">© 2024 Risabh Agrawal. Built by Faxlab.</p>
+</div>
+<div class="flex md:justify-end gap-8">
+<a class="text-slate-500 hover:text-cyan-600 transition-all transform hover:scale-110 font-label text-sm tracking-wide uppercase" href="#">YouTube</a>
+<a class="text-slate-500 hover:text-cyan-600 transition-all transform hover:scale-110 font-label text-sm tracking-wide uppercase" href="#">Instagram</a>
+<a class="text-slate-500 hover:text-cyan-600 transition-all transform hover:scale-110 font-label text-sm tracking-wide uppercase" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-cyan-600 transition-all transform hover:scale-110 font-label text-sm tracking-wide uppercase" href="#">X</a>
+</div>
+</div>
+</footer>
+</body></html>

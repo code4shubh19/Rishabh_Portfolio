@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#9faac0",
+                    "inverse-on-surface": "#ebf1ff",
+                    "secondary-container": "#c9e6fc",
+                    "surface": "#f9f9ff",
+                    "surface-container-highest": "#d8e3fa",
+                    "surface-bright": "#f9f9ff",
+                    "outline": "#6d797e",
+                    "on-tertiary-fixed-variant": "#3c475a",
+                    "primary-fixed-dim": "#4fd6fd",
+                    "on-tertiary-fixed": "#111c2c",
+                    "surface-container-low": "#f0f3ff",
+                    "on-secondary-container": "#4c687a",
+                    "surface-container-high": "#dee8ff",
+                    "background": "#f9f9ff",
+                    "on-primary-fixed-variant": "#004e60",
+                    "on-surface-variant": "#3d494d",
+                    "surface-variant": "#d8e3fa",
+                    "secondary": "#466274",
+                    "on-primary-fixed": "#001f28",
+                    "secondary-fixed": "#c9e6fc",
+                    "primary-fixed": "#b5ebff",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#545f72",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#2e4a5b",
+                    "secondary-fixed-dim": "#aecadf",
+                    "inverse-surface": "#263142",
+                    "primary": "#00677e",
+                    "tertiary-fixed-dim": "#bcc7dd",
+                    "surface-tint": "#00677e",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#1bb8de",
+                    "on-surface": "#111c2c",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#cfdaf1",
+                    "inverse-primary": "#4fd6fd",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#d8e3fa",
+                    "on-background": "#111c2c",
+                    "outline-variant": "#bcc8ce",
+                    "on-tertiary-container": "#343f51",
+                    "on-secondary-fixed": "#001e2d",
+                    "on-primary-container": "#004454",
+                    "surface-container": "#e7eeff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-glass {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9ff]/60 dark:bg-[#111c2c]/60 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-2xl font-bold tracking-tight text-[#111c2c] dark:text-[#f9f9ff] font-['Space_Grotesk']">Risabh Agrawal</span>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] font-bold text-lg">
+<a class="text-[#00677e] dark:text-[#1bb8de] border-b-2 border-[#00677e] dark:border-[#1bb8de] pb-1 hover:opacity-80 transition-all duration-300" href="#">Home</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-all duration-300" href="#">About</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-all duration-300" href="#">Achievements</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-all duration-300" href="#">Faxlab AI</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-all duration-300" href="#">Books</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-all duration-300" href="#">Insights</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:opacity-80 active:scale-95 transition-all duration-300">Contact</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-sm font-semibold mb-6">Founder at Faxlab &amp; Author</span>
+<h1 class="text-5xl lg:text-7xl font-bold text-on-surface leading-[1.1] mb-8">Architecting AI, <br/><span class="text-primary italic">Narrating</span> the Future.</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
+                        Bridging the gap between technical precision and human narrative. Currently building Faxlab AI while exploring the philosophy of innovation through the written word.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md text-lg font-bold hover:bg-gradient-to-r hover:from-primary hover:to-primary-container transition-all">Explore Books</button>
+<button class="bg-surface-container-low text-on-surface px-8 py-4 rounded-md text-lg font-bold hover:bg-surface-container-high transition-all">Learn About Faxlab</button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10 transform lg:rotate-2">
+<img alt="Risabh Agrawal" class="w-full h-full object-cover" data-alt="Professional studio portrait of a confident man with subtle lighting, minimalist grey background, wearing a modern dark blazer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8KzK5Ys-QZAEcT-dWD3D3pL1hic42q9NAzgLmAJukmRbI4n_aDYbzdTp3H06e2BGSCLpvkvIQDyBpLsYagFvd667Y6lsXxQ-2iwQ5L3zlaYz1txmhRf_y5ONywVexV_xEKj3DDgABH5bjAyRZLltJ0D51a4LRUvqyCvK8YcHM4Y96ubJlRdzRJNH-3FcIhhllESUoLaA0zMzS4dFx2eE-5krg1Y36sRutPPX0bSsQvU3L7xF-1rrJIcElpdZuosh2i_qU6wfM99CH"/>
+</div>
+<!-- Decorative background element -->
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl -z-0"></div>
+</div>
+</div>
+</section>
+<!-- About Snapshot Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+<div class="sticky top-32">
+<h2 class="text-4xl font-bold mb-6">The Intersection of Logic &amp; Storytelling</h2>
+<div class="w-16 h-1 bg-primary mb-8"></div>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-6">
+                            My journey is a synthesis of two worlds. As the founder of Faxlab AI, I spend my days navigating the complex architectures of neural networks and operational scale.
+                        </p>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8">
+                            As an author, I translate those technical complexities into human stories. I believe the future isn't just built with code—it's written in the values we embed within our systems.
+                        </p>
+<div class="flex items-center gap-4 text-primary font-bold">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span>Read Full Story</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Bento Style Highlight Cards -->
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="terminal">terminal</span>
+<h3 class="text-xl font-bold mb-2">Faxlab AI</h3>
+<p class="text-sm text-on-surface-variant">Leading the next generation of autonomous intelligence and enterprise integration.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow md:mt-12">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="menu_book">menu_book</span>
+<h3 class="text-xl font-bold mb-2">Published Works</h3>
+<p class="text-sm text-on-surface-variant">Author of three best-selling titles exploring the human-machine interface.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="star">star</span>
+<h3 class="text-xl font-bold mb-2">Achievements</h3>
+<p class="text-sm text-on-surface-variant">Recipient of the 2023 Digital Innovator Award and Literary Merit Prize.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow md:mt-12">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="public">public</span>
+<h3 class="text-xl font-bold mb-2">Community</h3>
+<p class="text-sm text-on-surface-variant">Mentoring over 500+ developers and aspiring authors globally through Faxlab.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Books Teaser Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="text-4xl font-bold mb-4">Latest Releases</h2>
+<p class="text-on-surface-variant max-w-xl">Deep dives into the philosophy of technology, the future of work, and the human spirit in an age of automation.</p>
+</div>
+<button class="bg-secondary-container text-on-secondary-container px-6 py-3 rounded-md font-bold hover:bg-primary-container hover:text-on-primary-container transition-all">View All Titles</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Book Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[2/3] bg-surface-container-high rounded-xl overflow-hidden mb-6 relative">
+<img alt="Book Cover" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Abstract minimalist book cover design with deep teal and cyan flowing shapes, high quality book texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ4Zg3NG3UMrHTKi2qQ96m9MTQH8pIdTjKEZd5TsQj8SZZBIs_UjJREPYDIDCDg--3Qopv_hsY9oI_ugIEynOgV66rTgCci7Qlerlz9rg845CBqHIsG3lWpW0iUzNxRsZL9PvZkkl5rTOy3-1o7FC_2NC8li_DyWekTKcg9_9PFq40HAI7zm_0-upKAVCLFjc2mirCCl6uUGMyo1q6IgTlIzxGGmGdlWfstkhpTcTW8zxNPGKK1SIzIFwJYatP-ey1HCML-sqibvrf"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-on-surface px-6 py-2 rounded-full font-bold">Preview Insight</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">The Digital Soul</h3>
+<p class="text-on-surface-variant mb-4">Exploration of human consciousness in the wake of sentient-parallel AI development.</p>
+<div class="flex items-center gap-2 text-primary font-semibold">
+<span>Get Copy</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Book Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[2/3] bg-surface-container-high rounded-xl overflow-hidden mb-6 relative">
+<img alt="Book Cover" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern book cover with geometric architectural lines in monochromatic slate and sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvTjG7vS9EaTixkuzt3T4uppeKwfj6g5RNaNfLQX-o9M4qUYKpx0Wy9vdapaia6qm9o_DY6XXXigeoGyMF4Vr6p82WrOp1iz3l_Tm_eykVWg6OXYs4aavPd3_n7VssmJU9iMUDIQ3vWIE1DoaWi1if-0Pb5XueXJMrsP074O7xOlTSLo7tdzNhK7kOH-WDDZoZ-alaeUJGBqjQPcWRyjeRQqXVicHTs6YjYW-ZfEu8G4f3WrQ6HF-ELwoA9vi37RDBVnAY7-rZ02rm"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-on-surface px-6 py-2 rounded-full font-bold">Preview Insight</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Faxlab Chronicles</h3>
+<p class="text-on-surface-variant mb-4">The untold story of building a silicon valley powerhouse from a home garage in Mumbai.</p>
+<div class="flex items-center gap-2 text-primary font-semibold">
+<span>Get Copy</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Book Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[2/3] bg-surface-container-high rounded-xl overflow-hidden mb-6 relative">
+<img alt="Book Cover" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Futuristic book cover design with glowing organic patterns in soft violet and blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGKelMui4pxZx419H8Huw1ERTNJg7foBspbZ3QPL5kX5jN2I5gJsVM4T1Mw_66dlt5NEespYan6Dk1J75YyGiH9Yy-cEUD5ZLjqzUKGxmBJKsQgAEW5qgo-0NTzwBsudPQ5pzfbJXGzzQVCpYaCVwJ9UP78uQJ4eZq3LcQYEiR6cHplRte4QrNAmzCKUJR6dutFV20yUK3v6tigT_eDpaB4yk0vNfbs5GWvwCxwAvHVtQECukjkxxRNOELcihUpP0r5Hy4ZAS1pvM7"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="bg-white text-on-surface px-6 py-2 rounded-full font-bold">Preview Insight</span>
+</div>
+</div>
+<h3 class="text-2xl font-bold mb-2 group-hover:text-primary transition-colors">Neural Narratives</h3>
+<p class="text-on-surface-variant mb-4">A collection of short stories co-written with the first iteration of Faxlab's generative AI.</p>
+<div class="flex items-center gap-2 text-primary font-semibold">
+<span>Get Copy</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Insight CTA -->
+<section class="py-24 bg-surface-container-high">
+<div class="max-w-4xl mx-auto px-8 text-center">
+<h2 class="text-4xl font-bold mb-6">Stay ahead of the curve.</h2>
+<p class="text-xl text-on-surface-variant mb-10">Subscribe to my monthly editorial where I dissect the future of AI and the craft of storytelling.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-1 px-6 py-4 rounded-md bg-surface-container-lowest border-none outline-none focus:ring-2 focus:ring-primary transition-all" placeholder="Enter your email address" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-md font-bold hover:opacity-90 transition-all" type="submit">Join 12,000+ Readers</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f0f3ff] dark:bg-[#111c2c] w-full py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div class="flex flex-col gap-4">
+<span class="font-['Space_Grotesk'] font-bold text-[#111c2c] dark:text-[#f9f9ff] text-xl">Risabh Agrawal</span>
+<p class="font-['Inter'] text-sm leading-relaxed text-[#4c687a] dark:text-[#bcc8ce]">© 2024 The Author-Founder. All rights reserved.</p>
+</div>
+<div class="flex flex-col gap-3 font-['Inter'] text-sm leading-relaxed">
+<h4 class="font-bold text-[#111c2c] dark:text-[#f9f9ff] mb-1">Navigation</h4>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">Home</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">About</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">Achievements</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">Faxlab AI</a>
+</div>
+<div class="flex flex-col gap-3 font-['Inter'] text-sm leading-relaxed">
+<h4 class="font-bold text-[#111c2c] dark:text-[#f9f9ff] mb-1">Resources</h4>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">Books</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">Insights</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">Terms</a>
+</div>
+<div class="flex flex-col gap-4 font-['Inter'] text-sm leading-relaxed">
+<h4 class="font-bold text-[#111c2c] dark:text-[#f9f9ff] mb-1">Connect</h4>
+<div class="flex gap-4">
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">YouTube</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">Instagram</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">LinkedIn</a>
+<a class="text-[#4c687a] dark:text-[#bcc8ce] hover:text-[#00677e] dark:hover:text-[#1bb8de] transition-colors" href="#">X</a>
+</div>
+<button class="text-left font-bold text-[#00677e] dark:text-[#1bb8de] hover:opacity-80 transition-all" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top ↑</button>
+</div>
+</div>
+</footer>
+</body></html>

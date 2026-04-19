@@ -12,10 +12,12 @@ function cn(...inputs: ClassValue[]) {
 }
 
 const navLinks = [
-  { name: "Faxlab AI", href: "#faxlab" },
-  { name: "Insights", href: "#insights" },
-  { name: "Books", href: "#books" },
-  { name: "About", href: "#about" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Achievements", href: "/achievements" },
+  { name: "Faxlab AI", href: "/faxlab" },
+  { name: "Books", href: "/books" },
+  { name: "Insights", href: "/insights" },
 ];
 
 export const Header = () => {
@@ -48,17 +50,16 @@ export const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-10">
+        <div className="hidden md:flex items-center gap-8 font-display font-bold text-lg">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors duration-200 relative group"
+              className="text-on-surface-variant hover:text-primary transition-all duration-300 relative group"
             >
               {link.name}
-              <motion.span
-                className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300"
-                whileHover={{ width: "100%" }}
+              <span
+                className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300 group-hover:w-full"
               />
             </Link>
           ))}
@@ -114,7 +115,7 @@ export const Header = () => {
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium text-on-surface hover:text-primary transition-colors block py-2"
+                  className="text-xl font-display font-bold text-on-surface hover:text-primary transition-colors block py-2"
                 >
                   {link.name}
                 </Link>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Latest Insights | The Author-Founder</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#545f72",
+                    "secondary-fixed-dim": "#aecadf",
+                    "error": "#ba1a1a",
+                    "surface-dim": "#cfdaf1",
+                    "surface-container-high": "#dee8ff",
+                    "outline": "#6d797e",
+                    "on-tertiary-fixed": "#111c2c",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#d8e3fa",
+                    "on-primary-fixed-variant": "#004e60",
+                    "tertiary-container": "#9faac0",
+                    "background": "#f9f9ff",
+                    "on-error-container": "#93000a",
+                    "primary-container": "#1bb8de",
+                    "on-tertiary-fixed-variant": "#3c475a",
+                    "on-surface": "#111c2c",
+                    "on-primary-fixed": "#001f28",
+                    "outline-variant": "#bcc8ce",
+                    "on-secondary-fixed-variant": "#2e4a5b",
+                    "inverse-on-surface": "#ebf1ff",
+                    "surface": "#f9f9ff",
+                    "on-surface-variant": "#3d494d",
+                    "surface-bright": "#f9f9ff",
+                    "primary-fixed-dim": "#4fd6fd",
+                    "tertiary-fixed": "#d8e3fa",
+                    "secondary-container": "#c9e6fc",
+                    "on-background": "#111c2c",
+                    "surface-variant": "#d8e3fa",
+                    "on-secondary-fixed": "#001e2d",
+                    "inverse-surface": "#263142",
+                    "secondary-fixed": "#c9e6fc",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f0f3ff",
+                    "on-tertiary-container": "#343f51",
+                    "surface-tint": "#00677e",
+                    "secondary": "#466274",
+                    "primary-fixed": "#b5ebff",
+                    "on-primary-container": "#004454",
+                    "on-error": "#ffffff",
+                    "on-secondary-container": "#4c687a",
+                    "surface-container": "#e7eeff",
+                    "tertiary-fixed-dim": "#bcc7dd",
+                    "primary": "#00677e",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#4fd6fd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f9f9ff]/60 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-bold tracking-tight text-[#111c2c]" href="#">The Author-Founder</a>
+<div class="hidden md:flex items-center space-x-8 font-['Space_Grotesk'] font-bold text-lg">
+<a class="text-[#4c687a] hover:text-[#00677e] transition-all duration-300" href="#">Home</a>
+<a class="text-[#4c687a] hover:text-[#00677e] transition-all duration-300" href="#">About</a>
+<a class="text-[#4c687a] hover:text-[#00677e] transition-all duration-300" href="#">Achievements</a>
+<a class="text-[#4c687a] hover:text-[#00677e] transition-all duration-300" href="#">Faxlab AI</a>
+<a class="text-[#4c687a] hover:text-[#00677e] transition-all duration-300" href="#">Books</a>
+<a class="text-[#00677e] border-b-2 border-[#00677e] pb-1" href="#">Insights</a>
+</div>
+<button class="bg-[#00677e] text-white px-6 py-2 rounded-md font-bold hover:opacity-80 transition-all duration-300 active:scale-95">
+                Contact
+            </button>
+</div>
+</nav>
+<main class="pt-24 pb-20 px-8 max-w-7xl mx-auto">
+<!-- Header Section -->
+<header class="py-16 md:py-24">
+<div class="max-w-3xl">
+<span class="text-primary font-bold tracking-widest text-sm uppercase">Curated Thoughts</span>
+<h1 class="text-5xl md:text-7xl font-bold mt-4 leading-tight">Latest Insights</h1>
+<p class="mt-6 text-xl text-on-surface-variant leading-relaxed font-body">
+                    Exploring the intersection of artificial intelligence, narrative structures, and the raw mechanics of modern entrepreneurship.
+                </p>
+</div>
+</header>
+<!-- Category Toggle Chips -->
+<div class="flex flex-wrap gap-4 mb-16">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-medium text-sm">All Topics</button>
+<button class="px-6 py-2 rounded-full bg-secondary-container text-on-secondary-container font-medium text-sm hover:bg-surface-container-highest transition-colors">AI &amp; Technology</button>
+<button class="px-6 py-2 rounded-full bg-secondary-container text-on-secondary-container font-medium text-sm hover:bg-surface-container-highest transition-colors">Narrative Strategy</button>
+<button class="px-6 py-2 rounded-full bg-secondary-container text-on-secondary-container font-medium text-sm hover:bg-surface-container-highest transition-colors">Entrepreneurship</button>
+</div>
+<!-- Featured Section (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-24">
+<!-- Major Featured Article -->
+<article class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="aspect-video overflow-hidden">
+<img alt="Featured insight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern minimalist workspace with glowing neural network visualization on a sleek monitor, soft blue and teal lighting atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGZcTwKBgP4x75bX6gca_yOPSDbfYPUMXlIoKmzC1QVyMl2aqfqScaiH0S6fl8v253pbsv39K8FbdDRts4I96XPJgkEUT4BI86zG_7khIweGpgnqj5qsDXHHq1EKFgxSysdKavcIOi5t9dIRmQC6bTugOKvPBKUgGsSnKPTUO_8AGL1eCH1v2_M4DIr77JRHbrZZwvVNChCOEIjiLJ9gbaBPMooFxaYRhl3giSMFz9NdRdau8stxCf1a5hcwrOf0TtRkVGuvlj29qL"/>
+</div>
+<div class="p-8">
+<div class="flex items-center space-x-4 mb-4 text-sm font-medium text-primary">
+<span>AI &amp; Technology</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant">March 14, 2024</span>
+</div>
+<h2 class="text-3xl font-bold group-hover:text-primary transition-colors leading-snug">The Faxlab Manifest: Why Generative AI is the New Creative Co-Author</h2>
+<p class="mt-4 text-on-surface-variant text-lg leading-relaxed">
+                        In an era of prompt engineering, the boundary between human intent and machine execution is blurring. We examine how founders can leverage LLMs not just for efficiency, but for narrative depth.
+                    </p>
+<div class="mt-8 flex items-center justify-between">
+<span class="text-sm font-medium text-tertiary">12 min read</span>
+<a class="flex items-center text-primary font-bold group" href="#">
+                            Read Article 
+                            <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Side Featured Small -->
+<div class="md:col-span-4 flex flex-col gap-8">
+<article class="p-6 rounded-xl bg-surface-container-low border border-transparent hover:border-primary-container transition-all">
+<div class="text-sm font-medium text-primary mb-3">Entrepreneurship</div>
+<h3 class="text-xl font-bold mb-3 leading-snug">Bootstrap vs. Blitz: The Author's Way of Scaling</h3>
+<p class="text-on-surface-variant text-sm line-clamp-2">How writing a book taught me more about unit economics than my first three startups combined.</p>
+<div class="mt-4 text-xs font-medium text-tertiary uppercase tracking-wider">8 min read • Feb 28</div>
+</article>
+<article class="p-6 rounded-xl bg-surface-container-low border border-transparent hover:border-primary-container transition-all">
+<div class="text-sm font-medium text-primary mb-3">Narrative Strategy</div>
+<h3 class="text-xl font-bold mb-3 leading-snug">Storytelling as Code: Structuring Your Brand Pitch</h3>
+<p class="text-on-surface-variant text-sm line-clamp-2">Treating your brand story like a codebase allows for iterative testing and cleaner communication.</p>
+<div class="mt-4 text-xs font-medium text-tertiary uppercase tracking-wider">15 min read • Feb 15</div>
+</article>
+<div class="mt-auto p-8 rounded-xl bg-primary text-on-primary relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="text-xl font-bold mb-2">New Book Alert</h4>
+<p class="text-primary-fixed text-sm mb-4">The Synthetic Founder is now available for pre-order.</p>
+<button class="bg-white text-primary px-4 py-2 rounded-md text-sm font-bold">Reserve Copy</button>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-weight="fill">auto_stories</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Insights Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Row 1 -->
+<article class="flex flex-col">
+<div class="aspect-[4/3] rounded-lg overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover" data-alt="Abstract digital data points connecting in a dark network, representation of secure technology and information flow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGMs5yAPywoBOMMN1yocU7UCSQbJlYb7C-HnmGB5UNfh6W1Xx8ubYj2fSG6xIVxY6gt-XRxVLdkQievuph3cL0PcH29pZ4FAmVokwWa6C2Q3_SdONLm4aofTwk2XTutzZT2LS3hzkRYRXn9rVCE0YKERDx-08JARf7YTKvObp7CgtL3BrsrSY9ob-U9ZF6255sm0QUOgyriwn-0AQrvBLqq2lNMVCvYUN30Sb6NfZS5F6VT5VaaiCAhIGcQTyTNXhtjmxQd3RGGQNU"/>
+</div>
+<div class="text-xs font-bold text-primary uppercase tracking-widest mb-3">AI &amp; Technology</div>
+<h3 class="text-xl font-bold mb-4 leading-snug">The Ethics of Prompting: Who Owns the Output?</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">A legal and philosophical dive into the ownership of AI-assisted literary works in the age of global datasets.</p>
+<div class="mt-auto flex justify-between items-center text-xs text-tertiary">
+<span>Jan 22, 2024</span>
+<span>10 min read</span>
+</div>
+</article>
+<article class="flex flex-col">
+<div class="aspect-[4/3] rounded-lg overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover" data-alt="Bespoke luxury library with high mahogany shelves, soft natural light through a tall window illuminating dust motes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGfdl0K-vYsacvKOJnIKKa3HCzUeY6BQIvqPjDcTThHdi1-GVlKa2oYCbde8ddyzxEkgEhteviLt572TOyrzaF0C3yPcpzGPjWUpB-6Hm0PL-nNvZ-qgTqdyAD79ur-LCq1UM757rTraP_J0TMEcO5eA02JZLTGs9PZv5slEUtzvZobaWZjslrPvaqwqZdB3l4kDp6aXp0PSi0lu9TmyvzLtvMjECKSgfGro9KlLbWxdon4EMDvT28iNKPYYR9Wdvubm4_DpzF2nar"/>
+</div>
+<div class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Narrative Strategy</div>
+<h3 class="text-xl font-bold mb-4 leading-snug">Building 'The Author' Brand in Tech</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Why founders are increasingly turning to long-form writing to establish defensible market authority.</p>
+<div class="mt-auto flex justify-between items-center text-xs text-tertiary">
+<span>Jan 18, 2024</span>
+<span>6 min read</span>
+</div>
+</article>
+<article class="flex flex-col">
+<div class="aspect-[4/3] rounded-lg overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover" data-alt="Overhead view of a minimalist desk with a notebook, pen, and open laptop, symbolizing focused entrepreneurial work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBopImNKm7kes778nkjUOwgiXPQp81elEpHdkhzz1VtxBN7FFlsOjbJ4RukNqQyRRg-AV-MM9eQdoaDUT1s0-zVAP7gbzj-hdHcvZ6c7gAixY1CgXnrStPfXpVYsiLy9sKfWZJyQWiE0mr6olEunoyRQtiC3eqm_fIDbw9fFM1puI-6nqkvljhS5H0NXoXCB3BfFjMzxRxObtaE9Kfy0YBuHR9uZdrDVc4dOu1EretBVw_si_uXnrYBWsq9D-TnlfWbxUZcLbh8HZXT"/>
+</div>
+<div class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Entrepreneurship</div>
+<h3 class="text-xl font-bold mb-4 leading-snug">Failure is a Draft: Redefining Pivot Culture</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">How literary editing processes can be applied to startup pivots for more graceful transitions.</p>
+<div class="mt-auto flex justify-between items-center text-xs text-tertiary">
+<span>Jan 05, 2024</span>
+<span>14 min read</span>
+</div>
+</article>
+</section>
+<!-- Newsletter Section -->
+<section class="mt-32 p-12 md:p-20 rounded-3xl bg-surface-container-low text-center relative overflow-hidden">
+<div class="max-w-2xl mx-auto relative z-10">
+<h2 class="text-4xl font-bold mb-6">The Synthesis Weekly</h2>
+<p class="text-on-surface-variant text-lg mb-10">
+                    Get a curated digest of AI breakthroughs, narrative techniques, and founder mental models delivered to your inbox every Sunday.
+                </p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow bg-surface-container-lowest border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all" placeholder="Enter your email" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-xl font-bold hover:opacity-90 active:scale-95 transition-all" type="submit">Subscribe Now</button>
+</form>
+<p class="mt-6 text-xs text-tertiary">No spam. Only high-signal intellectual value. Unsubscribe anytime.</p>
+</div>
+<!-- Decorative Element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl -ml-32 -mb-32"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f0f3ff] w-full py-16 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<h4 class="font-['Space_Grotesk'] font-bold text-2xl text-[#111c2c] mb-6">The Author-Founder</h4>
+<p class="font-['Inter'] text-sm leading-relaxed text-[#4c687a]">
+                    Synthesizing technological innovation with literary narrative to build the future of storytelling.
+                </p>
+</div>
+<div>
+<h5 class="font-bold text-[#111c2c] mb-6 uppercase tracking-wider text-xs">Navigation</h5>
+<ul class="space-y-4 font-['Inter'] text-sm">
+<li><a class="text-[#4c687a] hover:text-[#00677e] transition-colors" href="#">Home</a></li>
+<li><a class="text-[#4c687a] hover:text-[#00677e] transition-colors" href="#">About</a></li>
+<li><a class="text-[#4c687a] hover:text-[#00677e] transition-colors" href="#">Achievements</a></li>
+<li><a class="text-[#00677e] font-bold" href="#">Insights</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-[#111c2c] mb-6 uppercase tracking-wider text-xs">Projects</h5>
+<ul class="space-y-4 font-['Inter'] text-sm">
+<li><a class="text-[#4c687a] hover:text-[#00677e] transition-colors" href="#">Faxlab AI</a></li>
+<li><a class="text-[#4c687a] hover:text-[#00677e] transition-colors" href="#">The Synthetic Founder</a></li>
+<li><a class="text-[#4c687a] hover:text-[#00677e] transition-colors" href="#">Narrative Labs</a></li>
+<li><a class="text-[#4c687a] hover:text-[#00677e] transition-colors" href="#">Books</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-[#111c2c] mb-6 uppercase tracking-wider text-xs">Legal</h5>
+<ul class="space-y-4 font-['Inter'] text-sm">
+<li><a class="text-[#4c687a] hover:text-[#00677e] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-[#4c687a] hover:text-[#00677e] transition-colors" href="#">Terms</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-['Inter'] text-sm text-[#4c687a]">© 2024 The Author-Founder. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-[#4c687a] hover:text-[#00677e]" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-[#4c687a] hover:text-[#00677e]" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-[#4c687a] hover:text-[#00677e]" href="#"><span class="material-symbols-outlined">rss_feed</span></a>
+</div>
+</div>
+</footer>
+</body></html>

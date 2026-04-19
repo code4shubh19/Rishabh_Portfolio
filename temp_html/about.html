@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Inter:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#9faac0",
+                    "inverse-on-surface": "#ebf1ff",
+                    "secondary-container": "#c9e6fc",
+                    "surface": "#f9f9ff",
+                    "surface-container-highest": "#d8e3fa",
+                    "surface-bright": "#f9f9ff",
+                    "outline": "#6d797e",
+                    "on-tertiary-fixed-variant": "#3c475a",
+                    "primary-fixed-dim": "#4fd6fd",
+                    "on-tertiary-fixed": "#111c2c",
+                    "surface-container-low": "#f0f3ff",
+                    "on-secondary-container": "#4c687a",
+                    "surface-container-high": "#dee8ff",
+                    "background": "#f9f9ff",
+                    "on-primary-fixed-variant": "#004e60",
+                    "on-surface-variant": "#3d494d",
+                    "surface-variant": "#d8e3fa",
+                    "secondary": "#466274",
+                    "on-primary-fixed": "#001f28",
+                    "secondary-fixed": "#c9e6fc",
+                    "primary-fixed": "#b5ebff",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#545f72",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#2e4a5b",
+                    "secondary-fixed-dim": "#aecadf",
+                    "inverse-surface": "#263142",
+                    "primary": "#00677e",
+                    "tertiary-fixed-dim": "#bcc7dd",
+                    "surface-tint": "#00677e",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#1bb8de",
+                    "on-surface": "#111c2c",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#cfdaf1",
+                    "inverse-primary": "#4fd6fd",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#d8e3fa",
+                    "on-background": "#111c2c",
+                    "outline-variant": "#bcc8ce",
+                    "on-tertiary-container": "#343f51",
+                    "on-secondary-fixed": "#001e2d",
+                    "on-primary-container": "#004454",
+                    "surface-container": "#e7eeff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-glass {
+            background: rgba(249, 249, 255, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .asymmetric-blend {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 w-full bg-white/60 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-slate-900 font-headline">
+                Risabh Agrawal
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 font-medium hover:text-cyan-600 transition-colors duration-300" href="#">Home</a>
+<a class="text-cyan-700 font-bold border-b-2 border-cyan-700 pb-1" href="#">About</a>
+<a class="text-slate-600 font-medium hover:text-cyan-600 transition-colors duration-300" href="#">Achievements</a>
+<a class="text-slate-600 font-medium hover:text-cyan-600 transition-colors duration-300" href="#">Faxlab AI</a>
+<a class="text-slate-600 font-medium hover:text-cyan-600 transition-colors duration-300" href="#">Books</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-bold hover:bg-primary-container transition-all">
+                Contact
+            </button>
+</div>
+</nav>
+<main class="relative overflow-hidden">
+<!-- Hero Section: Editorial Asymmetry -->
+<section class="max-w-7xl mx-auto px-8 py-20 md:py-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest font-label">The Synthesis</span>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-on-surface leading-[1.1] tracking-tight">
+                    Architecting <span class="text-primary italic">Innovation</span> through Narrative.
+                </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed">
+                    Founder of Faxlab AI and Author of "The Digital Renaissance". Bridging the gap between technological precision and human storytelling.
+                </p>
+<div class="flex gap-4">
+<div class="w-12 h-1 bg-primary-container self-center"></div>
+<span class="text-sm font-label font-semibold text-primary uppercase tracking-widest">About &amp; Achievements</span>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="Sophisticated portrait of a young male tech founder in a modern minimalist office with soft natural lighting and books in background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIVlltqYf2n9__CHSrV8cFhQYkUC731WbOEsyET9BzL1icWrNDdgJgCvncJ2YcpyZmYUr5UjClHk9LdkKWST1c55qKbgK08voUQTqhFDCKLGebtNskGkEcm881EdX3GotsMLiGQlcysQaQFYKqu3Yn8eaC5HKZezbc3SI8_dqgucGUtfV5GDboaU-gblzmMdPc8aL4Rnp87T1RLjn0hNiTxhTKzgIeP0beKEhKg7OPTjorVptLeUWa_ip0RM22X0NZMZKJDZkzl__9"/>
+</div>
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-surface-container-high rounded-full blur-3xl opacity-50 -z-10"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-container/20 rounded-full blur-2xl opacity-60 -z-10"></div>
+</div>
+</section>
+<!-- Journey Section: Bento Grid Highlights -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-3xl font-headline font-bold mb-4">Core Milestones</h2>
+<div class="w-20 h-1.5 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[600px]">
+<!-- Large Card: Faxlab AI -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between group cursor-pointer hover:bg-white transition-all shadow-sm">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="rocket_launch">rocket_launch</span>
+<h3 class="text-3xl font-headline font-bold">Faxlab AI Foundations</h3>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                                Scaled Faxlab AI from a conceptual framework to a leading enterprise solution, servicing 50+ Global 500 companies in deep-learning integration.
+                            </p>
+</div>
+<div class="mt-8">
+<img class="w-full h-48 object-cover rounded-lg" data-alt="High-tech minimalist server room or software architecture diagram with cyan light accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArxU1Mq7wHtomendANvtDvvMfzP9aHUOYKr3-hdvtV7Nckuqpk6nGLsKuzP8-1M_NA97rlrB95M_-LapbCWPfkAvbcdNowL3tzRX62H_w4KNq6wz-p19aYORAleXJUOVMH8AOk5OYaH4T-LkDsiZzqy4JLk0z7ViTtU7G02KFthZx43JWx7LKlQAdYlOiXvSMHAR6kLrGKj7HCy2nFcst3uNsLnfvHj8gARIDDJIMOXAuqaA-Q6xGxYiHXuryRWM8Oz22se2-boaXX"/>
+</div>
+</div>
+<!-- Medium Card: Author -->
+<div class="md:col-span-2 md:row-span-1 bg-primary text-on-primary p-8 rounded-xl flex items-center gap-8 shadow-xl">
+<div class="flex-1 space-y-3">
+<h3 class="text-2xl font-headline font-bold">Literary Success</h3>
+<p class="text-primary-fixed leading-snug">
+                                Published "The Digital Renaissance", which spent 12 weeks on the technology best-seller list and translated into 8 languages.
+                            </p>
+</div>
+<div class="flex-shrink-0 w-24 h-32 bg-white/20 rounded shadow-lg backdrop-blur flex items-center justify-center p-2 text-center text-[10px] font-bold">
+                            THE DIGITAL RENAISSANCE
+                        </div>
+</div>
+<!-- Small Card: Education -->
+<div class="md:col-span-1 bg-surface-container-highest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="school">school</span>
+<h4 class="font-headline font-bold text-lg">Education</h4>
+<p class="text-sm text-on-surface-variant">MSc Computer Science, Stanford University. Focus on Neural Networks.</p>
+</div>
+<!-- Small Card: Award -->
+<div class="md:col-span-1 bg-secondary-container p-8 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container mb-4" data-icon="award_star">award_star</span>
+<h4 class="font-headline font-bold text-lg text-on-secondary-container">Recognitions</h4>
+<p class="text-sm text-on-secondary-container">Forbes 30 Under 30 - Enterprise Tech Category (2022)</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline: The Founder's Path -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4 sticky top-32 h-fit">
+<h2 class="text-4xl font-headline font-bold leading-tight mb-6">Professional Narrative</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                        A decade-long commitment to pushing the boundaries of what's possible at the intersection of logic and creativity.
+                    </p>
+<div class="p-6 bg-surface-container rounded-xl">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-1 bg-primary-container h-12"></div>
+<blockquote class="text-lg font-headline font-medium text-primary italic">
+                                "Technology is the tool, but the story we tell with it defines our humanity."
+                            </blockquote>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 space-y-12">
+<!-- Timeline Item 1 -->
+<div class="relative pl-12 border-l-2 border-surface-container-high">
+<div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-primary ring-4 ring-surface"></div>
+<span class="text-primary font-bold text-sm tracking-widest font-label uppercase">2023 - Present</span>
+<h3 class="text-2xl font-headline font-bold mt-2 mb-4">CEO @ Faxlab AI</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                            Pioneering modular AI architectures that allow organizations to scale intelligence without sacrificing data privacy. Overseeing a global team of 150+ engineers and creative thinkers.
+                        </p>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative pl-12 border-l-2 border-surface-container-high">
+<div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-outline-variant ring-4 ring-surface"></div>
+<span class="text-on-surface-variant font-bold text-sm tracking-widest font-label uppercase">2020 - 2022</span>
+<h3 class="text-2xl font-headline font-bold mt-2 mb-4">Tech Lead @ Global Cloud Systems</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                            Directed the migration of legacy infrastructure for three Fortune 50 clients, reducing operational latency by 45% through custom-built edge computing solutions.
+                        </p>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative pl-12 border-l-2 border-surface-container-high">
+<div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-outline-variant ring-4 ring-surface"></div>
+<span class="text-on-surface-variant font-bold text-sm tracking-widest font-label uppercase">2018 - 2020</span>
+<h3 class="text-2xl font-headline font-bold mt-2 mb-4">Senior Software Architect</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                            Architected the core engine for 'Nexus Connect', an open-source protocol that became the standard for IoT interoperability in smart city projects.
+                        </p>
+</div>
+<!-- Timeline Item 4 -->
+<div class="relative pl-12">
+<div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full bg-outline-variant ring-4 ring-surface"></div>
+<span class="text-on-surface-variant font-bold text-sm tracking-widest font-label uppercase">2016</span>
+<h3 class="text-2xl font-headline font-bold mt-2 mb-4">Founder's First Exit</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                            Successfully exited first startup 'DataStream', a real-time analytics platform for independent journalists, acquired by a major media conglomerate.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Trust -->
+<section class="bg-white py-16 border-y border-slate-100">
+<div class="max-w-7xl mx-auto px-8 flex flex-wrap justify-between items-center gap-12 grayscale opacity-40">
+<span class="text-2xl font-headline font-bold">STANFORD</span>
+<span class="text-2xl font-headline font-bold">FORBES</span>
+<span class="text-2xl font-headline font-bold">TECHCRUNCH</span>
+<span class="text-2xl font-headline font-bold">WIRED</span>
+<span class="text-2xl font-headline font-bold">PENGUIN BOOKS</span>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 max-w-5xl mx-auto px-8 text-center">
+<div class="bg-surface-container-high rounded-3xl p-12 md:p-20 relative overflow-hidden">
+<div class="relative z-10 space-y-6">
+<h2 class="text-4xl md:text-5xl font-headline font-bold">Ready to Build the Future?</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto">
+                        Whether you're interested in AI partnerships or literary collaborations, let's connect and create something impactful.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-all">Get in Touch</button>
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold shadow-sm border border-primary/10 hover:bg-white transition-all">View My Portfolio</button>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/10 blur-[100px]"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-container/20 blur-[100px]"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 full-width py-12 border-t border-slate-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 justify-between items-center">
+<div class="space-y-4">
+<div class="text-lg font-bold text-slate-900 dark:text-slate-100 font-space-grotesk">Risabh Agrawal</div>
+<div class="text-slate-500 dark:text-slate-500 font-inter text-sm tracking-wide uppercase">© 2024 Risabh Agrawal. Built by Faxlab.</div>
+</div>
+<div class="flex md:justify-end gap-6 mt-8 md:mt-0">
+<a class="text-slate-500 hover:text-cyan-700 transition-all scale-110 duration-200 uppercase text-xs font-bold font-label" href="#">YouTube</a>
+<a class="text-slate-500 hover:text-cyan-700 transition-all scale-110 duration-200 uppercase text-xs font-bold font-label" href="#">Instagram</a>
+<a class="text-slate-500 hover:text-cyan-700 transition-all scale-110 duration-200 uppercase text-xs font-bold font-label" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-cyan-700 transition-all scale-110 duration-200 uppercase text-xs font-bold font-label" href="#">X</a>
+</div>
+</div>
+</footer>
+</body></html>

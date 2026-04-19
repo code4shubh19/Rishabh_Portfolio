@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Faxlab AI | Risabh Agrawal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#9faac0",
+                    "inverse-on-surface": "#ebf1ff",
+                    "secondary-container": "#c9e6fc",
+                    "surface": "#f9f9ff",
+                    "surface-container-highest": "#d8e3fa",
+                    "surface-bright": "#f9f9ff",
+                    "outline": "#6d797e",
+                    "on-tertiary-fixed-variant": "#3c475a",
+                    "primary-fixed-dim": "#4fd6fd",
+                    "on-tertiary-fixed": "#111c2c",
+                    "surface-container-low": "#f0f3ff",
+                    "on-secondary-container": "#4c687a",
+                    "surface-container-high": "#dee8ff",
+                    "background": "#f9f9ff",
+                    "on-primary-fixed-variant": "#004e60",
+                    "on-surface-variant": "#3d494d",
+                    "surface-variant": "#d8e3fa",
+                    "secondary": "#466274",
+                    "on-primary-fixed": "#001f28",
+                    "secondary-fixed": "#c9e6fc",
+                    "primary-fixed": "#b5ebff",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#545f72",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#2e4a5b",
+                    "secondary-fixed-dim": "#aecadf",
+                    "inverse-surface": "#263142",
+                    "primary": "#00677e",
+                    "tertiary-fixed-dim": "#bcc7dd",
+                    "surface-tint": "#00677e",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#1bb8de",
+                    "on-surface": "#111c2c",
+                    "error": "#ba1a1a",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#cfdaf1",
+                    "inverse-primary": "#4fd6fd",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed": "#d8e3fa",
+                    "on-background": "#111c2c",
+                    "outline-variant": "#bcc8ce",
+                    "on-tertiary-container": "#343f51",
+                    "on-secondary-fixed": "#001e2d",
+                    "on-primary-container": "#004454",
+                    "surface-container": "#e7eeff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-space-grotesk { font-family: 'Space Grotesk', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 font-space-grotesk">
+                Risabh Agrawal
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">Achievements</a>
+<a class="text-cyan-700 dark:text-cyan-400 font-bold border-b-2 border-cyan-700 dark:border-cyan-400 pb-1 hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">Faxlab AI</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">Books</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:bg-gradient-to-r hover:from-primary hover:to-primary-container transition-all">
+                Contact
+            </button>
+</div>
+</nav>
+<main class="relative overflow-hidden">
+<!-- Hero Section: The Founder's Vision -->
+<section class="relative pt-20 pb-32 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase">
+<span class="material-symbols-outlined text-sm" data-icon="rocket_launch">rocket_launch</span>
+                        Engineering the Future
+                    </div>
+<h1 class="text-5xl md:text-7xl font-bold font-space-grotesk leading-tight text-on-surface">
+                        Faxlab AI: <span class="text-primary">Intelligence</span> Redefined.
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        As the founder of Faxlab, Risabh Agrawal bridges the gap between literary narrative and technological precision, building AI systems that don't just process data—they understand intent.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-md font-bold flex items-center gap-2 hover:shadow-lg transition-all" href="#">
+                            Visit Faxlab Website
+                            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="bg-surface-container-lowest text-primary px-8 py-4 rounded-md font-bold border border-outline-variant/20 hover:bg-surface-container-low transition-all" href="#">
+                            View Documentation
+                        </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="Futuristic AI neural network visualization with cyan light pulses on a dark background, professional and high-tech" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWrMmKz_rxpm22pcGhxWVxg_N7uecmsdeFHXrzX2Nmnb5krFaNvhDa6RwTwkP0cIQTIyBoaxLLYEbYn14OVZeTY_U8thEbNV6H5JHqjazRqJVhrACNYUrPVJVmw6BcGAbfRvGXwphXLhhagoJ-Pja0OSdkBfv8YvFC0JX4C3WYjYiVPWPP_qmdfkmR922gIaCclhHAgIpHL4dsEddbXsJQMNARmQEVJUkh_yAEhsObVWXixgR0n7IXkGagwacZgf7BmFDjzUI144Yc"/>
+</div>
+<!-- Decorative element -->
+<div class="absolute -top-6 -right-6 w-full h-full bg-primary-container/20 rounded-2xl -z-0"></div>
+</div>
+</div>
+</section>
+<!-- Mission Bento Grid -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-bold font-space-grotesk mb-4">Core Philosophy</h2>
+<div class="w-20 h-1 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="psychology">psychology</span>
+<h3 class="text-2xl font-bold font-space-grotesk mb-4">Human-Centric Intelligence</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                                We believe AI should be an extension of human creativity, not a replacement. Our mission is to automate the mundane so humanity can focus on the extraordinary. Faxlab AI is built on the intersection of deep learning and semantic nuance.
+                            </p>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant/10">
+<div class="flex items-center gap-4 text-primary font-bold">
+<span>Learn about our ethics</span>
+<span class="material-symbols-outlined" data-icon="trending_flat">trending_flat</span>
+</div>
+</div>
+</div>
+<!-- Small Highlight Card -->
+<div class="bg-primary p-10 rounded-xl text-on-primary flex flex-col justify-center text-center">
+<div class="text-6xl font-bold font-space-grotesk mb-2">99.9%</div>
+<div class="text-primary-fixed font-medium uppercase tracking-widest text-sm">Semantic Accuracy</div>
+<p class="mt-4 opacity-80 text-sm">Leading the industry in contextual understanding for complex workflows.</p>
+</div>
+<!-- Row 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="security">security</span>
+<h4 class="font-bold text-xl font-space-grotesk mb-2">Privacy First</h4>
+<p class="text-on-surface-variant text-sm">Enterprise-grade security protocols integrated into every node of the Faxlab stack.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="bolt">bolt</span>
+<h4 class="font-bold text-xl font-space-grotesk mb-2">Real-time Synthesis</h4>
+<p class="text-on-surface-variant text-sm">Experience latency-free data interpretation designed for high-stakes decision making.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="language">language</span>
+<h4 class="font-bold text-xl font-space-grotesk mb-2">Global Scale</h4>
+<p class="text-on-surface-variant text-sm">Supporting over 40+ languages with native-level cultural nuance and context.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Showcase: Faxlab AI -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1">
+<div class="relative">
+<img class="rounded-xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="Macro shot of a high-tech circuit board with blue and cyan neon lights, symbolizing core AI architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcwIxiJUsN0hpxzVZsmRQFU6pgmZ5hPsg3KAe5dwFwpVS1YvjYeZ5qaeZz84OOJwv8XCzmrut4XHyaaQMa0uj0OQqAtdPZuIZcNDaiY3S2Fh8k1fozg_C3Il-CSmbqDX7UwqN06b0tQJlHTBxvVRV3QByKIjjRdiHGgDng8neJhJjpFmxpzygrx5TPKTmLc1FaLQlAhyib8stLDO1O7X83A3Tko25aHjFBEji3LSC0ILEZb3_WbRVpffA5mXQnJrFF-biX5UfIwzFK"/>
+<div class="absolute -bottom-10 -right-10 bg-surface-container-lowest p-6 rounded-lg shadow-xl max-w-xs hidden md:block">
+<p class="italic text-on-surface-variant font-medium">"Technology is the pen, but the logic is the story. Faxlab is the convergence of both."</p>
+<p class="mt-4 font-bold text-primary">— Risabh Agrawal</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 space-y-8">
+<h2 class="text-4xl font-bold font-space-grotesk">Our Flagship: Faxlab AI Engine</h2>
+<p class="text-on-surface-variant text-lg">
+                        The Faxlab AI Engine is a proprietary architecture designed for multi-modal reasoning. Unlike standard LLMs, our engine utilizes a recursive feedback loop that verifies facts in real-time.
+                    </p>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="done_all">done_all</span>
+</div>
+<div>
+<h5 class="font-bold">Automated Editorial Review</h5>
+<p class="text-sm text-on-surface-variant">AI-driven refinement of complex documents for tone and technical accuracy.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="done_all">done_all</span>
+</div>
+<div>
+<h5 class="font-bold">Predictive Market Synthesis</h5>
+<p class="text-sm text-on-surface-variant">Real-time analysis of global trends to forecast business impacts.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="done_all">done_all</span>
+</div>
+<div>
+<h5 class="font-bold">Neural Knowledge Graphs</h5>
+<p class="text-sm text-on-surface-variant">Connecting disparate data points into a cohesive narrative for founders.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mb-24 px-8 max-w-7xl mx-auto">
+<div class="bg-primary-container/10 rounded-3xl p-12 md:p-20 relative overflow-hidden text-center border border-primary-container/20">
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-bold font-space-grotesk mb-6 text-on-primary-container">Ready to see the future?</h2>
+<p class="text-on-surface-variant text-xl mb-10 leading-relaxed">
+                        Join hundreds of innovative companies using Faxlab to automate their intelligence workflows. Explore the main platform or book a demo with our team.
+                    </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-gradient-to-r hover:from-primary hover:to-primary-container transition-all">
+                            Go to Faxlab.com
+                        </button>
+<button class="bg-white text-primary px-10 py-4 rounded-md font-bold text-lg border border-primary/20 hover:bg-surface-container-low transition-all">
+                            Schedule a Demo
+                        </button>
+</div>
+</div>
+<!-- Glassmorphism decorative circles -->
+<div class="absolute -top-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-20 -right-20 w-80 h-80 bg-primary-container/20 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 full-width py-12 border-t border-slate-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 justify-between items-center">
+<div class="space-y-4">
+<div class="text-lg font-bold text-slate-900 dark:text-slate-100 font-space-grotesk">Risabh Agrawal</div>
+<p class="text-slate-500 font-inter text-sm tracking-wide">© 2024 Risabh Agrawal. Built by Faxlab.</p>
+</div>
+<div class="flex md:justify-end gap-8 mt-8 md:mt-0">
+<a class="text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-300 transition-all font-inter text-sm tracking-wide uppercase" href="#">YouTube</a>
+<a class="text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-300 transition-all font-inter text-sm tracking-wide uppercase" href="#">Instagram</a>
+<a class="text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-300 transition-all font-inter text-sm tracking-wide uppercase" href="#">LinkedIn</a>
+<a class="text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-300 transition-all font-inter text-sm tracking-wide uppercase" href="#">X</a>
+</div>
+</div>
+</footer>
+</body></html>
