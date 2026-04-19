@@ -21,25 +21,71 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Bento Style Highlight Cards */}
-            <div className="p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-primary text-4xl mb-4">terminal</span>
-              <h3 className="text-xl font-bold font-display mb-2">Faxlab AI</h3>
-              <p className="text-sm text-on-surface-variant">Leading the next generation of autonomous intelligence and enterprise integration.</p>
+            <div className="p-8 bg-surface-container-lowest rounded-2xl border border-surface-container-high shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <span className="material-symbols-outlined text-primary text-3xl">terminal</span>
+              </div>
+              <h3 className="text-xl font-bold font-display mb-3 text-on-surface">Faxlab AI</h3>
+              <p className="text-sm text-on-surface-variant leading-relaxed">
+                An emerging AI-powered learning platform dedicated to bridging the gap between theoretical machine learning and real-world application through structured, hands-on experience.
+              </p>
             </div>
-            <div className="p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow md:mt-12">
-              <span className="material-symbols-outlined text-primary text-4xl mb-4">menu_book</span>
-              <h3 className="text-xl font-bold font-display mb-2">Published Works</h3>
-              <p className="text-sm text-on-surface-variant">Author of three best-selling titles exploring the human-machine interface.</p>
+
+            <div className="p-8 bg-surface-container-lowest rounded-2xl border border-surface-container-high shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 md:mt-12">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <span className="material-symbols-outlined text-primary text-3xl">menu_book</span>
+              </div>
+              <h3 className="text-xl font-bold font-display mb-4 text-on-surface">Published Works</h3>
+              <div className="space-y-4">
+                <div className="group">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-lg">📘</span>
+                    <span className="font-bold text-sm text-primary">What If You Are a Superhero</span>
+                  </div>
+                  <p className="text-xs text-on-surface-variant leading-relaxed pl-7">
+                    A reflective take on identity, potential, and self-discovery.
+                  </p>
+                </div>
+                <div className="group">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-lg">📕</span>
+                    <span className="font-bold text-sm text-secondary">My 50 Arranged Marriage Dates</span>
+                  </div>
+                  <p className="text-xs text-on-surface-variant leading-relaxed pl-7">
+                    Capturing real-life insights into modern relationships and society.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
-              <span className="material-symbols-outlined text-primary text-4xl mb-4">star</span>
-              <h3 className="text-xl font-bold font-display mb-2">Achievements</h3>
-              <p className="text-sm text-on-surface-variant">Recipient of the 2023 Digital Innovator Award and Literary Merit Prize.</p>
+
+            <div className="p-8 bg-surface-container-lowest rounded-2xl border border-surface-container-high shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <span className="material-symbols-outlined text-primary text-3xl">star</span>
+              </div>
+              <h3 className="text-xl font-bold font-display mb-3 text-on-surface">Achievements</h3>
+              <ul className="space-y-3">
+                {[
+                  "Founder of Faxlab AI",
+                  "Board Member – IIC",
+                  "Pioneer in AI-driven education",
+                  "Global Tech Contributor"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-2 text-sm text-on-surface-variant">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary/40" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="p-8 bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow md:mt-12">
-              <span className="material-symbols-outlined text-primary text-4xl mb-4">public</span>
-              <h3 className="text-xl font-bold font-display mb-2">Community</h3>
-              <p className="text-sm text-on-surface-variant">Mentoring over 500+ developers and aspiring authors globally through Faxlab.</p>
+
+            <div className="p-8 bg-surface-container-lowest rounded-2xl border border-surface-container-high shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 md:mt-12">
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+                <span className="material-symbols-outlined text-primary text-3xl">public</span>
+              </div>
+              <h3 className="text-xl font-bold font-display mb-3 text-on-surface">Community</h3>
+              <p className="text-sm text-on-surface-variant leading-relaxed">
+                Mentoring a global community of <strong>100+ developers</strong> and innovators, nurturing the next wave of technical and creative excellence.
+              </p>
             </div>
           </div>
         </div>

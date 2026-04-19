@@ -15,7 +15,7 @@ export default function Newsletter() {
             autoComplete="email"
           />
           <button className="bg-primary text-on-primary px-10 py-4 rounded-md font-bold hover:opacity-90 transition-all text-lg" type="submit">
-            Join 12,000+ Readers
+            Join 100+ Readers
           </button>
         </form>
       </div>

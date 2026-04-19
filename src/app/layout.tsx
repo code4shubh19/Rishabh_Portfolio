@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Risabh Agrawal | Author Site",
+  title: "Rishabh Agrawal | Author Site",
   description: "The Intellectual Architect - Bridging SaaS precision with editorial layout.",
 };
 

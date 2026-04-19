@@ -43,7 +43,7 @@ export const Header = () => {
         {/* Logo - Textual, Space Grotesk */}
         <Link href="/" className="flex items-center gap-2 group">
           <span className="text-2xl font-bold font-display tracking-tight text-on-surface">
-            Risabh Agrawal
+            Rishabh Agarwal
           </span>
         </Link>
 
@@ -56,7 +56,7 @@ export const Header = () => {
               className="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors duration-200 relative group"
             >
               {link.name}
-              <motion.span 
+              <motion.span
                 className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary rounded-full transition-all duration-300"
                 whileHover={{ width: "100%" }}
               />

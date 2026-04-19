@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#4c687a",
+                        "primary": "#00677e",
+                        "outline-variant": "#bcc8ce",
+                        "surface-variant": "#d8e3fa",
+                        "on-secondary-fixed": "#001e2d",
+                        "on-primary-fixed": "#001f28",
+                        "secondary-fixed": "#c9e6fc",
+                        "inverse-on-surface": "#ebf1ff",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#f9f9ff",
+                        "on-tertiary-container": "#343f51",
+                        "surface-tint": "#00677e",
+                        "error": "#ba1a1a",
+                        "on-surface": "#111c2c",
+                        "secondary": "#466274",
+                        "secondary-fixed-dim": "#aecadf",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#111c2c",
+                        "surface-container-highest": "#d8e3fa",
+                        "outline": "#6d797e",
+                        "primary-container": "#1bb8de",
+                        "tertiary": "#545f72",
+                        "secondary-container": "#c9e6fc",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#dee8ff",
+                        "surface-container": "#e7eeff",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "primary-fixed-dim": "#4fd6fd",
+                        "surface-container-low": "#f0f3ff",
+                        "primary-fixed": "#b5ebff",
+                        "tertiary-fixed": "#d8e3fa",
+                        "on-primary-fixed-variant": "#004e60",
+                        "surface": "#f9f9ff",
+                        "inverse-primary": "#4fd6fd",
+                        "surface-dim": "#cfdaf1",
+                        "on-secondary-fixed-variant": "#2e4a5b",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f9f9ff",
+                        "tertiary-fixed-dim": "#bcc7dd",
+                        "inverse-surface": "#263142",
+                        "on-surface-variant": "#3d494d",
+                        "on-primary-container": "#004454",
+                        "tertiary-container": "#9faac0",
+                        "on-background": "#111c2c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .font-space-grotesk { font-family: 'Space Grotesk', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface font-inter text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-50 font-space-grotesk">
+                Risabh Agrawal
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">Achievements</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">Faxlab AI</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-cyan-600 dark:hover:text-cyan-300 transition-colors duration-300" href="#">Books</a>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:opacity-80 transition-all" href="#">Contact</a>
+</div>
+<button class="md:hidden text-slate-900">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section / Title -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-4xl mx-auto text-left">
+<h1 class="text-5xl md:text-6xl font-headline font-bold text-on-surface mb-6 tracking-tight">Privacy Policy</h1>
+<p class="text-xl font-body text-on-surface-variant max-w-2xl leading-relaxed">
+                    Last Updated: December 2024. Your privacy is paramount. This policy outlines how we handle your digital footprint with the same integrity we apply to our engineering and literature.
+                </p>
+</div>
+</section>
+<!-- Content Section -->
+<section class="py-20 px-8 bg-surface">
+<div class="max-w-4xl mx-auto space-y-20">
+<!-- Information Collection -->
+<article class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="md:col-span-1">
+<h2 class="text-2xl font-headline font-bold text-primary sticky top-32">Information Collection</h2>
+</div>
+<div class="md:col-span-2 space-y-6">
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                            We collect information that you voluntarily provide to us when you express an interest in obtaining information about us or our products, when you participate in activities on the Website, or otherwise when you contact us.
+                        </p>
+<div class="bg-surface-container-lowest p-8 rounded-xl border-l-4 border-primary-container">
+<h3 class="font-headline font-bold mb-4">Personal Data includes:</h3>
+<ul class="space-y-3 text-on-surface-variant">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                    Name and Contact Data (Email, phone number)
+                                </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                    Credentials and Professional Profile details
+                                </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">check_circle</span>
+                                    Newsletter subscription preferences
+                                </li>
+</ul>
+</div>
+</div>
+</article>
+<!-- Use of Data -->
+<article class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="md:col-span-1">
+<h2 class="text-2xl font-headline font-bold text-primary sticky top-32">Use of Data</h2>
+</div>
+<div class="md:col-span-2">
+<p class="text-lg leading-relaxed text-on-surface-variant mb-6">
+                            We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.
+                        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-primary mb-3">analytics</span>
+<p class="font-medium">Analytics &amp; Performance</p>
+<p class="text-sm text-on-surface-variant mt-2">To monitor website traffic and improve user experience.</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-primary mb-3">campaign</span>
+<p class="font-medium">Communication</p>
+<p class="text-sm text-on-surface-variant mt-2">To send you newsletters and administrative information.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Cookies -->
+<article class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="md:col-span-1">
+<h2 class="text-2xl font-headline font-bold text-primary sticky top-32">Cookies</h2>
+</div>
+<div class="md:col-span-2">
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                            We may use cookies and similar tracking technologies to access or store information. Most Web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies.
+                        </p>
+<div class="mt-8 flex items-center gap-6 p-6 bg-secondary-container/30 rounded-xl">
+<div class="h-16 w-16 flex items-center justify-center bg-white rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">cookie</span>
+</div>
+<div>
+<h4 class="font-bold text-on-secondary-container">Transparency First</h4>
+<p class="text-sm text-on-secondary-container/80">We only use necessary cookies to ensure the platform functions as intended for your reading experience.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Third-party Links -->
+<article class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="md:col-span-1">
+<h2 class="text-2xl font-headline font-bold text-primary sticky top-32">Third-party Links</h2>
+</div>
+<div class="md:col-span-2">
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                            Our Website may contain links to third-party websites, services, or applications that are not affiliated with us. We are not responsible for the privacy practices of these third parties. We encourage you to review the privacy policies of any third-party websites you visit.
+                        </p>
+</div>
+</article>
+<!-- Contact Info -->
+<article class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="md:col-span-1">
+<h2 class="text-2xl font-headline font-bold text-primary sticky top-32">Contact Info</h2>
+</div>
+<div class="md:col-span-2">
+<p class="text-lg leading-relaxed text-on-surface-variant mb-8">
+                            If you have questions or comments about this policy, you may email us or post to:
+                        </p>
+<div class="bg-surface-container-highest p-10 rounded-2xl relative overflow-hidden">
+<div class="relative z-10">
+<p class="font-headline font-bold text-xl mb-1">Risabh Agrawal</p>
+<p class="text-primary font-medium mb-6">Founding Architect, Faxlab</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-medium">privacy@risabhagrawal.com</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-medium">Global Operations / Remote Hub</span>
+</div>
+</div>
+</div>
+<div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]">policy</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="py-24 px-8 bg-surface-container-low border-y border-outline-variant/10">
+<div class="max-w-4xl mx-auto bg-primary rounded-3xl p-12 text-center text-on-primary shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/20 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<h2 class="text-3xl md:text-4xl font-headline font-bold mb-4 relative z-10">Stay Informed on Tech &amp; Literacy</h2>
+<p class="text-on-primary/80 mb-8 max-w-xl mx-auto relative z-10">Subscribe to get monthly insights on AI development and architectural narrative directly to your inbox.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto relative z-10">
+<input class="flex-1 px-6 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" placeholder="Enter your email" type="email"/>
+<button class="bg-primary-container text-on-primary-container font-bold px-8 py-4 rounded-xl hover:scale-105 transition-transform" type="submit">Subscribe</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 full-width py-12 border-t border-slate-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-8">
+<div>
+<div class="text-lg font-bold text-slate-900 dark:text-slate-100 font-space-grotesk mb-4">Risabh Agrawal</div>
+<p class="text-slate-500 font-inter text-sm tracking-wide">© 2024 Risabh Agrawal. Built by Faxlab.</p>
+</div>
+<div class="flex flex-wrap md:justify-end gap-x-8 gap-y-4">
+<a class="font-inter text-sm tracking-wide uppercase text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-300 transition-all" href="#">YouTube</a>
+<a class="font-inter text-sm tracking-wide uppercase text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-300 transition-all" href="#">Instagram</a>
+<a class="font-inter text-sm tracking-wide uppercase text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-300 transition-all" href="#">LinkedIn</a>
+<a class="font-inter text-sm tracking-wide uppercase text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-300 transition-all" href="#">X</a>
+<a class="font-inter text-sm tracking-wide uppercase text-cyan-700 dark:text-cyan-400" href="#">Privacy Policy</a>
+<a class="font-inter text-sm tracking-wide uppercase text-slate-500 hover:text-cyan-600 dark:hover:text-cyan-300 transition-all" href="#">Terms</a>
+</div>
+</div>
+</footer>
+</body></html>
