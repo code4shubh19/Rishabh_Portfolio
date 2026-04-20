@@ -1,54 +1,49 @@
 "use client";
 
-// ============================================================
-// AchievementsHero.tsx
-// Section: Hero header for the Achievements & Milestones page.
-// Design: Stitch "Achievements & Milestones" screen.
-// To customize:
-//   - Change the badge text, headline, and subtext.
-//   - Update imageSrc to Rishabh's actual photo.
-//   - Update the stat card (number + label).
-// ============================================================
-
 import React from "react";
 import { IMAGES } from "@/lib/imageConfig";
+import { motion } from "framer-motion";
 
-// ─── Editable stats card (bottom-left floating card) ─────────
 const STAT = {
   number: "10+",
   label: "Global Innovation Awards Received",
 };
-// ─────────────────────────────────────────────────────────────
 
 export const AchievementsHero = () => {
   return (
-    <section className="relative min-h-[614px] flex items-center px-8 overflow-hidden bg-surface pt-24">
-      <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center relative z-10">
+    <section className="relative min-h-[80vh] flex items-center px-6 md:px-8 overflow-hidden bg-surface pt-32 pb-20">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
 
         {/* Left: Text content */}
-        <div>
-          {/* Badge — update text here */}
-          <span className="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-sm font-bold tracking-wider mb-6">
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6 border border-primary/20">
             CURATED EXCELLENCE
           </span>
 
-          {/* Headline */}
-          <h1 className="text-6xl md:text-8xl font-display font-bold tracking-tighter text-on-surface leading-none mb-8">
+          <h1 className="font-display font-bold tracking-tight text-on-surface leading-[1.1] mb-8">
             Achievements &amp; <br />
             <span className="text-primary italic">Milestones.</span>
           </h1>
 
-          {/* Subtitle — update here */}
-          <p className="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+          <p className="text-lg md:text-xl text-on-surface-variant max-w-lg leading-relaxed">
             The intersection of technological innovation and literary mastery.
             A chronicle of the journey from lines of code to the power of the
             written word.
           </p>
-        </div>
+        </motion.div>
 
         {/* Right: Portrait + stat card */}
-        <div className="relative">
-          <div className="aspect-square rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="relative max-w-md mx-auto lg:max-w-none w-full"
+        >
+          <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl lg:rotate-2 hover:rotate-0 transition-transform duration-700 border border-outline-variant/10">
             <img
               className="w-full h-full object-cover"
               alt="Rishabh Agrawal achievements and milestones"
@@ -56,16 +51,21 @@ export const AchievementsHero = () => {
             />
           </div>
 
-          {/* Floating stat card — update STAT object above */}
-          <div className="absolute -bottom-6 -left-6 bg-surface p-6 rounded-xl shadow-xl max-w-xs -rotate-3">
-            <p className="text-primary font-display font-bold text-3xl">{STAT.number}</p>
-            <p className="text-on-surface-variant text-sm font-medium">{STAT.label}</p>
-          </div>
-        </div>
+          {/* Floating stat card */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="absolute -bottom-6 -left-4 md:-left-8 bg-surface p-6 rounded-2xl shadow-2xl max-w-[240px] md:max-w-xs lg:-rotate-3 border border-outline-variant/10"
+          >
+            <p className="text-primary font-display font-bold text-3xl md:text-4xl mb-1">{STAT.number}</p>
+            <p className="text-on-surface-variant text-sm md:text-base font-medium leading-tight">{STAT.label}</p>
+          </motion.div>
+        </motion.div>
       </div>
 
-      {/* Decorative gradient — cosmetic only */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-container/10 to-transparent pointer-events-none"></div>
+      {/* Decorative gradient */}
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none -z-10"></div>
     </section>
   );
 };

@@ -1,40 +1,42 @@
 "use client";
 
-// ============================================================
-// BooksHero.tsx
-// Section: Header for the Books & Publications page.
-// Design: Stitch "Books & Publications" screen.
-// To customize: Change the headline or the sidebar description.
-// ============================================================
-
 import React from "react";
+import { motion } from "framer-motion";
 
 export const BooksHero = () => {
   return (
-    <section className="max-w-7xl mx-auto px-8 mb-24 pt-32">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+    <section className="max-w-7xl mx-auto px-6 md:px-8 mb-16 md:mb-24 pt-32 md:pt-40">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-end">
         {/* Left: Main headline */}
-        <div className="md:col-span-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="lg:col-span-8"
+        >
           {/* Eyebrow label */}
-          <span className="text-primary font-display font-bold tracking-widest uppercase text-sm mb-4 block">
+          <span className="text-primary font-display font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">
             Publications &amp; Intellect
           </span>
 
-          {/* Headline — update wording or line break as needed */}
-          <h1 className="text-6xl md:text-7xl font-display font-bold text-on-surface leading-tight tracking-tighter">
+          <h1 className="font-display font-bold text-on-surface leading-[1.1] tracking-tight">
             Books that bridge <br />
-            <span className="text-primary-container">Tech and Narrative.</span>
+            <span className="text-primary italic">Tech and Narrative.</span>
           </h1>
-        </div>
+        </motion.div>
 
         {/* Right: Description with left accent bar */}
-        <div className="md:col-span-4 border-l-4 border-primary-container pl-6 pb-2">
-          {/* Update the description text here */}
-          <p className="text-lg text-on-surface-variant leading-relaxed">
+        <motion.div 
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="lg:col-span-4 border-l-2 md:border-l-4 border-primary/20 pl-6 pb-2"
+        >
+          <p className="text-lg md:text-xl text-on-surface-variant leading-relaxed">
             A curated collection of explorations into artificial intelligence,
             digital philosophy, and the future of human-machine synthesis.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
