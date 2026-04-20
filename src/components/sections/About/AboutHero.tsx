@@ -3,12 +3,13 @@
 // ============================================================
 // AboutHero.tsx
 // Section: Hero header for the About & Achievements page.
-// Design: Pulled from Stitch "About & Achievements" screen.
+// Design: Pulled from external design(figma) "About & Achievements" screen.
 // To customize: Change the badge text, headline, subheadline,
 //   image `src`, or the accent label text below.
 // ============================================================
 
 import React from "react";
+import { IMAGES } from "@/lib/imageConfig";
 
 export const AboutHero = () => {
   return (
@@ -49,7 +50,7 @@ export const AboutHero = () => {
           <img
             className="w-full h-full object-cover"
             alt="Rishabh Agrawal - Founder of Faxlab AI and Author"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIVlltqYf2n9__CHSrV8cFhQYkUC731WbOEsyET9BzL1icWrNDdgJgCvncJ2YcpyZmYUr5UjClHk9LdkKWST1c55qKbgK08voUQTqhFDCKLGebtNskGkEcm881EdX3GotsMLiGQlcysQaQFYKqu3Yn8eaC5HKZezbc3SI8_dqgucGUtfV5GDboaU-gblzmMdPc8aL4Rnp87T1RLjn0hNiTxhTKzgIeP0beKEhKg7OPTjorVptLeUWa_ip0RM22X0NZMZKJDZkzl__9"
+            src={IMAGES.profile.aboutPortrait}
           />
         </div>
 

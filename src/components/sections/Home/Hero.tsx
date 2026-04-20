@@ -1,4 +1,5 @@
 import React from 'react';
+import { IMAGES } from '@/lib/imageConfig';
 
 export default function Hero() {
   return (
@@ -39,7 +40,7 @@ export default function Hero() {
             <img
               alt="Rishabh Agarwal"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8KzK5Ys-QZAEcT-dWD3D3pL1hic42q9NAzgLmAJukmRbI4n_aDYbzdTp3H06e2BGSCLpvkvIQDyBpLsYagFvd667Y6lsXxQ-2iwQ5L3zlaYz1txmhRf_y5ONywVexV_xEKj3DDgABH5bjAyRZLltJ0D51a4LRUvqyCvK8YcHM4Y96ubJlRdzRJNH-3FcIhhllESUoLaA0zMzS4dFx2eE-5krg1Y36sRutPPX0bSsQvU3L7xF-1rrJIcElpdZuosh2i_qU6wfM99CH"
+              src={IMAGES.profile.heroPortrait}
             />
           </div>
           {/* Decorative background element */}

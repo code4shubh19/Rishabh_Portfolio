@@ -1,4 +1,5 @@
 import React from 'react';
+import { IMAGES } from '@/lib/imageConfig';
 
 export default function BooksTeaser() {
   return (
@@ -20,7 +21,7 @@ export default function BooksTeaser() {
               <img
                 alt="Book Cover"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ4Zg3NG3UMrHTKi2qQ96m9MTQH8pIdTjKEZd5TsQj8SZZBIs_UjJREPYDIDCDg--3Qopv_hsY9oI_ugIEynOgV66rTgCci7Qlerlz9rg845CBqHIsG3lWpW0iUzNxRsZL9PvZkkl5rTOy3-1o7FC_2NC8li_DyWekTKcg9_9PFq40HAI7zm_0-upKAVCLFjc2mirCCl6uUGMyo1q6IgTlIzxGGmGdlWfstkhpTcTW8zxNPGKK1SIzIFwJYatP-ey1HCML-sqibvrf"
+                src={IMAGES.books.superhero}
               />
               <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="bg-white text-on-surface px-6 py-2 rounded-full font-bold">Preview Insight</span>
@@ -39,7 +40,7 @@ export default function BooksTeaser() {
               <img
                 alt="Book Cover"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvTjG7vS9EaTixkuzt3T4uppeKwfj6g5RNaNfLQX-o9M4qUYKpx0Wy9vdapaia6qm9o_DY6XXXigeoGyMF4Vr6p82WrOp1iz3l_Tm_eykVWg6OXYs4aavPd3_n7VssmJU9iMUDIQ3vWIE1DoaWi1if-0Pb5XueXJMrsP074O7xOlTSLo7tdzNhK7kOH-WDDZoZ-alaeUJGBqjQPcWRyjeRQqXVicHTs6YjYW-ZfEu8G4f3WrQ6HF-ELwoA9vi37RDBVnAY7-rZ02rm"
+                src={IMAGES.books.marriageDates}
               />
               <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="bg-white text-on-surface px-6 py-2 rounded-full font-bold">Preview Insight</span>
@@ -58,7 +59,7 @@ export default function BooksTeaser() {
               <img
                 alt="Book Cover"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGKelMui4pxZx419H8Huw1ERTNJg7foBspbZ3QPL5kX5jN2I5gJsVM4T1Mw_66dlt5NEespYan6Dk1J75YyGiH9Yy-cEUD5ZLjqzUKGxmBJKsQgAEW5qgo-0NTzwBsudPQ5pzfbJXGzzQVCpYaCVwJ9UP78uQJ4eZq3LcQYEiR6cHplRte4QrNAmzCKUJR6dutFV20yUK3v6tigT_eDpaB4yk0vNfbs5GWvwCxwAvHVtQECukjkxxRNOELcihUpP0r5Hy4ZAS1pvM7"
+                src={IMAGES.books.neuralNarratives}
               />
               <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="bg-white text-on-surface px-6 py-2 rounded-full font-bold">Preview Insight</span>

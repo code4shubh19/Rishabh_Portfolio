@@ -62,8 +62,8 @@ export const AchievementsTimeline = () => {
                   {/* Tag */}
                   <div
                     className={`inline-block px-4 py-1 rounded text-sm font-bold mb-4 bg-surface-container-high ${item.tagColor === "primary"
-                        ? "text-primary"
-                        : "text-secondary"
+                      ? "text-primary"
+                      : "text-secondary"
                       }`}
                   >
                     {item.tag}
@@ -93,8 +93,8 @@ export const AchievementsTimeline = () => {
                   {/* Vertical accent bar */}
                   <div
                     className={`w-2 h-24 rounded-full hidden md:block ${item.tagColor === "primary"
-                        ? "bg-primary"
-                        : "bg-primary-container"
+                      ? "bg-primary"
+                      : "bg-primary-container"
                       }`}
                   ></div>
                 </div>

@@ -11,6 +11,7 @@
 // ============================================================
 
 import React from "react";
+import { IMAGES } from "@/lib/imageConfig";
 
 // ─── Editable stats card (bottom-left floating card) ─────────
 const STAT = {
@@ -48,11 +49,10 @@ export const AchievementsHero = () => {
         {/* Right: Portrait + stat card */}
         <div className="relative">
           <div className="aspect-square rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
-            {/* TODO: Replace with Rishabh's actual photo */}
             <img
               className="w-full h-full object-cover"
               alt="Rishabh Agrawal achievements and milestones"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMV7V3SIPk0s6goasXJNJNoCq9bbuWxZaVVoA3I1PVbwLvzBNVpN6NmvSEl4t5bFDvZn2CmUlcc_381N5qDstCb2ekxcMRLSv2ALpHEtt-fx5QnXKXk12YjA8T5RwlFuy-OrBbiy8_HNXF0vHvtDQV32XtDBRnzzgqI7OsHxJh1hD0vrX5_75BZIfqpnE3hCsnfiQSHZGoLD-rU8cWDKdCCw_9zw1mnURAljRLMVrUY142VLGqGmS-NctdJ4TO4-w14SuaQ7txkdNe"
+              src={IMAGES.achievements.hero}
             />
           </div>
 

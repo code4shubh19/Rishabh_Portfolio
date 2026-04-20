@@ -13,11 +13,11 @@
 import React from "react";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
+import { IMAGES } from "@/lib/imageConfig";
 
 // ─── Editable: Main featured article ─────────────────────────
 const FEATURED_ARTICLE = {
-  imageSrc:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuDGZcTwKBgP4x75bX6gca_yOPSDbfYPUMXlIoKmzC1QVyMl2aqfqScaiH0S6fl8v253pbsv39K8FbdDRts4I96XPJgkEUT4BI86zG_7khIweGpgnqj5qsDXHHq1EKFgxSysdKavcIOi5t9dIRmQC6bTugOKvPBKUgGsSnKPTUO_8AGL1eCH1v2_M4DIr77JRHbrZZwvVNChCOEIjiLJ9gbaBPMooFxaYRhl3giSMFz9NdRdau8stxCf1a5hcwrOf0TtRkVGuvlj29qL",
+  imageSrc: IMAGES.insights.featured,
   imageAlt: "Featured insight article image",
   category: "AI & Technology",
   date: "March 14, 2024",

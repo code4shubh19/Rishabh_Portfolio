@@ -6,8 +6,6 @@
 // ============================================================
 
 import React from "react";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import { AboutHero } from "@/components/sections/About/AboutHero";
 import { AboutMilestones } from "@/components/sections/About/AboutMilestones";
 import { AboutTimeline } from "@/components/sections/About/AboutTimeline";
@@ -21,22 +19,18 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="bg-surface text-on-surface min-h-screen">
-      <Header />
-      <main className="relative overflow-hidden pt-16">
-        {/* Hero section with portrait */}
-        <AboutHero />
+    <div className="relative overflow-hidden pt-16">
+      {/* Hero section with portrait */}
+      <AboutHero />
 
-        {/* Bento grid of milestone cards */}
-        <AboutMilestones />
+      {/* Bento grid of milestone cards */}
+      <AboutMilestones />
 
-        {/* Professional timeline */}
-        <AboutTimeline />
+      {/* Professional timeline */}
+      <AboutTimeline />
 
-        {/* CTA block */}
-        <AboutCTA />
-      </main>
-      <Footer />
+      {/* CTA block */}
+      <AboutCTA />
     </div>
   );
 }

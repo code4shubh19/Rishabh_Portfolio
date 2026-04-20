@@ -11,6 +11,7 @@
 import React from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { IMAGES } from "@/lib/imageConfig";
 
 // ─── Editable: All books data ─────────────────────────────────
 // Add a new object to this array to add another book card.
@@ -22,8 +23,7 @@ const BOOKS = [
     year: "2023",
     genre: "Self-help / Motivation",
     amazonHref: "https://amzn.in/d/04YPt5mw", // ← Update with real Amazon link
-    coverSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDEWjiSuIvGiUb9nNuDSsR3ULZvEEC6xqo1txLx31XfDfHBpttADRo_sV8YuOtN2G4mpCLeXsqYlL_3ONBqkfNzeZtgFwrrydel-t2fofqTmEhKpI0SeRFFF98vDIf0qpsITbOhZU44IzNik_QgyNuqpj0m_kvETbx_t3uXEjHnf1qKT7nAhkggsljil7gdMt6Y-iVJjJHh3y5gQwLGAGV9Wvud4ygEqILbz6YqGXw5uz7zPyyOE_VatXIx1lypeZZB0N3PquYsP4Vy",
+    coverSrc: IMAGES.books.superhero,
     coverAlt: "What If You Are a Superhero - Book Cover",
   },
   {
@@ -33,8 +33,7 @@ const BOOKS = [
     year: "2022",
     genre: "Humor / Memoir",
     amazonHref: "https://amzn.in/d/04YPt5mw", // ← Update with real Amazon link
-    coverSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAo0ZKI0hVisG2RF_o3Dg-BzAdNqCEfewQ7Ns89qzPSWB5tix-jzm3mn1ewDt0WHSIIoTDc7siY7etzO_Y822uMpnYd8GEhSw2xUq3RyIh4aIfIKqSq1Yl8RfiRI0RC4-BIl9yZLzlpDyE3X58mtPNRQL7nnv3uHx4qEzrT6mzPVNHaNQYA3k8aRw7tCv4NBB1UGdMjxmha19LADx7sGA8wa8veQs_MiqiFsXRNFNwy_1tKQIHqCyUSRR-U4UgRdtaS5G8vfk8uxa_7",
+    coverSrc: IMAGES.books.marriageDates,
     coverAlt: "My 50 Arranged Marriage Dates - Book Cover",
   },
   {
@@ -44,8 +43,7 @@ const BOOKS = [
     year: "2021",
     genre: "Tech Philosophy / Fiction",
     amazonHref: "#", // ← Update with real Amazon link
-    coverSrc:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBBS-J68OqBH7y8WZtxPypE_pOgFD-imH_McJSA6B8d7NKyLAybKC2U7KMtBhoFtVD0BrETGMVzG93EKwfkZ9lgR2jAgSfXjW5d-XUbel0MT9CzRRZfSQAZa3piQmCvI9W5RXe_3K39BguvqCXJlG0WbSo0hgTDDwx6inTuXs5m3wogE-uJvfzmNsodB9-MwUXSvTuSz32dbEMNgD3nSKDeCFBvIOQ8Ky8fyC8iBWmFYGiMpCkVMy0lxS8eKqpAe9Mm0JObayjvSKkJ",
+    coverSrc: IMAGES.books.neuralNarratives,
     coverAlt: "Neural Narratives - Book Cover",
   },
 ];
